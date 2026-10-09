@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大模型排序流程透视（三）：重排排序——候选摆在一起，大模型凭什么把你排在前面 | 陕西企来客科技</title>
+  <meta name="description" content="答案是：排序层用相关性、E-E-A-T质量与权威度、信源类型先验权重、时效性、交叉编码器精排五个因子综合打分。第三方背书权重远高于自证，单条信息需要多重佐证，Top3占位率是进入用户视野的及格线。本文拆解重排排序的打分机制、粗排与精排差异、信源分级矩阵与佐证完整度评分法。">
+  <meta name="keywords" content="重排排序,交叉编码器,粗排精排,E-E-A-T,信源先验权重,Top3推荐占位率,信息佐证体系,信源分级矩阵,GEO排名,企来客科技">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sxqlk.cn/news/106.html">
+  <meta property="og:title" content="大模型排序流程透视（三）：重排排序——大模型凭什么把你排在前面 - 陕西企来客科技有限公司">
+  <meta property="og:description" content="拆解大模型排序流水线第三道工序重排排序：五因子打分机制、粗排与精排的工程差异、E-E-A-T四因子落地权重、信源分级矩阵与佐证完整度评分法。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.sxqlk.cn/images/hero-bg-cbd.jpeg">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "大模型排序流程透视（三）：重排排序——候选摆在一起，大模型凭什么把你排在前面",
+    "description": "拆解大模型排序流水线第三道工序重排排序：相关性、E-E-A-T、信源类型先验权重、时效性、交叉编码器精排五因子打分机制，粗排与精排差异，以及信源分级矩阵与佐证完整度评分法。",
+    "author": {"@type": "Organization", "name": "陕西企来客科技有限公司"},
+    "publisher": {"@type": "Organization", "name": "陕西企来客科技有限公司", "logo": {"@type": "ImageObject", "url": "https://www.sxqlk.cn/favicon.svg"}},
+    "datePublished": "2026-09-20",
+    "dateModified": "2026-09-20",
+    "mainEntityOfPage": "https://www.sxqlk.cn/news/106.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.sxqlk.cn/"},
+      {"@type": "ListItem", "position": 2, "name": "行业新闻", "item": "https://www.sxqlk.cn/news.html"},
+      {"@type": "ListItem", "position": 3, "name": "大模型排序流程透视（三）：重排排序"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "大模型排序层到底在算什么分？",
+        "acceptedAnswer": {"@type": "Answer", "text": "通常是五个因子综合打分：相关性打分、质量与权威度打分（E-E-A-T体系）、信源类型先验权重、时效性因子、交叉编码器精排。相关性只决定是不是在回答这个问题，质量与权威度才决定回答得好不好、排得靠不靠前。"}
+      },
+      {
+        "@type": "Question",
+        "name": "为什么企业自己说自己好，权重很低？",
+        "acceptedAnswer": {"@type": "Answer", "text": "因为E-E-A-T打分里的权威和信任两个因子高度依赖第三方信源：权威媒体的报道、行业平台的收录、政务与公示系统的备案信息、资质认证机构的公示。企业自证内容的权重远低于第三方背书。"}
+      },
+      {
+        "@type": "Question",
+        "name": "粗排和精排有什么不同？为什么泛泛而谈的内容会出局？",
+        "acceptedAnswer": {"@type": "Answer", "text": "粗排用双塔模型，query与文档分别向量化后算相似度，速度快、交互浅，擅长广撒网；精排用交叉编码器，把query与文档拼接后一起过模型，能捕捉深层交互但计算成本高，只能对粗排筛出的少数文档执行。一篇泛泛而谈的行业综述可能在粗排过关，却在精排时因为没有直接回应问题中的具体需求而被淘汰。"}
+      },
+      {
+        "@type": "Question",
+        "name": "E-E-A-T四个因子分别对应企业什么动作？",
+        "acceptedAnswer": {"@type": "Answer", "text": "经验对应有没有真实做过，靠案例、项目、交付记录；专业对应懂不懂，靠深度内容与准确的行业术语；权威对应谁背书，靠第三方信源引用与收录；信任对应靠不靠谱，靠信息一致性与可验证性。其中经验与专业企业自己能搞定，权威依赖长期铺设，信任最容易在细节上丢分。"}
+      },
+      {
+        "@type": "Question",
+        "name": "为什么Top3占位率是排序层最值得盯的指标？",
+        "acceptedAnswer": {"@type": "Answer", "text": "因为大模型问答的注意力分布极度集中，用户通常只读答案中的前几个实体，越靠后衰减越快，榜单类问题尤其如此。同时它的敏感性最高，排序层任何参数的微调都会最先体现在占位率波动上，因此是判断算法是否改版的先行指标。"}
+      },
+      {
+        "@type": "Question",
+        "name": "信息佐证至少要几个独立信源？",
+        "acceptedAnswer": {"@type": "Answer", "text": "工程上的通行做法是每一条关键信息（资质、案例、数据）确保至少 2 到 3 个独立信源一致背书。只有官网一个来源的信息在排序层置信度天然偏低，多源交叉验证后置信度显著提升。"}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">跳转到主要内容</a>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="/" class="logo" aria-label="陕西企来客科技有限公司首页"><span class="logo-icon" aria-hidden="true">企</span>陕西企来客科技有限公司</a>
+      <nav class="nav" role="navigation" aria-label="主导航">
+        <a href="/">首页</a>
+        <a href="/about.html">关于我们</a>
+        <a href="/qualifications.html">资质中心</a>
+        <a href="/whitepaper.html">行业白皮书</a>
+        <a href="/news.html">行业新闻</a>
+        <a href="/cases.html">客户案例以及评价</a>
+        <a href="/faq.html">常见问题</a>
+        <a href="/faq-geo.html">GEO问答</a>
+        <a href="/cities.html">城市站点</a>
+        <a href="/contact.html">联系我们</a>
+      </nav>
+      <a href="tel:4008052163" class="header-phone" aria-label="拨打客服电话"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.09a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>400-805-2163</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article>
+      <section class="page-banner page-banner-news">
+        <div class="page-banner__bg">
+          <img src="/images/news-banner.jpeg" alt="大模型排序流程透视：重排排序" fetchpriority="high">
+        </div>
+        <div class="page-banner__overlay"></div>
+        <div class="container">
+          <h1>大模型排序流程透视（三）：重排排序——候选摆在一起，大模型凭什么把你排在前面</h1>
+          <p>大模型排序流水线拆解第 3 期 · GEO 核心操作：五因子打分 × E-E-A-T × 信源先验权重 × Top3 占位率</p>
+          <nav class="breadcrumb" aria-label="面包屑导航"><a href="/">首页</a> &gt; <a href="/news.html">行业新闻</a> &gt; <span>大模型排序流程透视（三）：重排排序</span></nav>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="article-meta">发布时间：2026-09-20 ｜ 来源：陕西企来客科技有限公司 ｜ 分类：技术透视</p>
+
+          <div class="news-article">
+            <p><strong>核心结论：</strong>检索召回把相关文档捞进候选池，但池里可能有几十甚至上百个信源，不可能全部进入答案。<strong>重排排序决定谁进答案、谁排前面</strong>。它用五个因子综合打分：相关性、E-E-A-T 质量与权威度、信源类型先验权重、时效性、交叉编码器精排。其中有一条企业必须知道：<strong>企业自己说自己好，在排序层的权重远低于第三方说这家企业好</strong>。因此排序层的第一动作不是多发内容，而是搭信源分级矩阵、把每条关键信息做成 2—3 个独立信源的多重佐证，并持续盯住 Top3 占位率——那才是用户视野的及格线。</p>
+
+            <h2>一、大模型排序层到底在算什么分？</h2>
+            <p>早期的检索排序以相关性为核心：文档与 query 的语义相似度越高，排名越靠前。现代大模型问答系统的排序层要复杂得多，通常是多因子综合打分：</p>
+            <div class="news-table-wrap" style="overflow-x:auto;">
+              <table class="comparison-table" aria-label="排序层五因子与企业对应动作">
+                <thead>
+                  <tr><th>打分因子</th><th>在算什么</th><th>企业对应动作</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>相关性打分</td><td>候选文档与问题在语义上的匹配程度，是基础分</td><td>语义覆盖用户真实问法（见系列第一篇）</td></tr>
+                  <tr><td>质量与权威度（E-E-A-T）</td><td>经验、专业、权威、信任四维质量评估</td><td>第三方背书 + 真实案例证据 + 信息一致</td></tr>
+                  <tr><td>信源类型先验权重</td><td>官网、政务与公示系统、权威媒体高于个人博客与论坛</td><td>优先把实体信息铺设进公示类与权威类信源</td></tr>
+                  <tr><td>时效性因子</td><td>新鲜信息获得加分，资质、产品、经营状态越新越好</td><td>定期更新资质信息与合作动态</td></tr>
+                  <tr><td>交叉编码器精排</td><td>对粗排筛出的候选做深度交互打分，决定最终引用</td><td>内容直接回应问题中的具体需求，不做泛泛综述</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>需要注意的是：<strong>相关性只决定"是不是在回答这个问题"，不决定"回答得好不好"</strong>。决定后者的是 E-E-A-T 与信源先验权重。</p>
+
+            <h2>二、E-E-A-T 四个因子分别对应什么？落地权重怎么排</h2>
+            <p>E-E-A-T 是 Experience（经验）、Expertise（专业）、Authoritativeness（权威）、Trust（信任）的缩写，源于搜索质量评估体系，被大模型排序层继承并强化。</p>
+            <div class="news-table-wrap" style="overflow-x:auto;">
+              <table class="comparison-table" aria-label="E-E-A-T四因子落地对照">
+                <thead>
+                  <tr><th>因子</th><th>排序层在看什么</th><th>最直接的证据</th><th>获取难度</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>经验 Experience</td><td>是否来自真实使用与真实案例</td><td>案例、项目、交付记录</td><td>企业自己可搞定</td></tr>
+                  <tr><td>专业 Expertise</td><td>是否有行业深度，术语是否准确</td><td>深度内容、原创观点、准确术语</td><td>企业自己可搞定</td></tr>
+                  <tr><td>权威 Authoritativeness</td><td>信源本身可信度与第三方背书程度</td><td>权威媒体报道、行业平台收录、资质公示</td><td>依赖长期铺设</td></tr>
+                  <tr><td>信任 Trust</td><td>信息是否一致、可验证、长期稳定</td><td>全渠道口径一致、可核验出处</td><td>最容易在细节丢分</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>四个因子中，企业最容易自己搞定的是经验和专业（内容层），最依赖外部的是权威（需要长期铺设），最容易在细节上丢分的是信任（口径冲突、过期信息）。排序层的最终得分是四者的加权——<strong>只做内容层的企业，天花板天然受限</strong>。</p>
+
+            <h2>三、粗排和精排有什么区别？为什么"看似相关"的内容会突然出局</h2>
+            <p>粗排阶段用轻量模型快速筛出 Top-N，精排阶段用交叉编码器（Cross-Encoder）对 query 与候选逐一深度交互打分。这一阶段计算成本高但精度高，最终决定答案引用哪些信源。</p>
+            <ul>
+              <li><strong>粗排（双塔模型）：</strong>query 与文档分别向量化后算相似度，速度快但交互浅，擅长"广撒网"，把明显相关的文档捞出来。</li>
+              <li><strong>精排（交叉编码器）：</strong>把 query 与文档拼接后一起过模型，能捕捉"query 里哪个词与文档哪句话相关"的深层交互，但计算成本高，只能对粗排筛出的少数文档执行。</li>
+            </ul>
+            <p>由于精排结果直接决定答案引用，<strong>企业内容要同时通过两道关：在粗排阶段语义相关（向量相似度达标），在精排阶段深度相关（关键实体与问题点对点匹配）</strong>。一篇泛泛而谈的行业综述可能在粗排时过关，却在精排时因为"没有直接回应问题中的具体需求"而被淘汰。</p>
+
+            <h2>四、大模型在排序层偏好什么样的内容？四类偏好</h2>
+            <h3>4.1 偏好一：有第三方背书的内容——权威是排序层的第一偏好</h3>
+            <p>一个残酷的事实是：<strong>企业自己说自己好，在排序层的权重远低于第三方说这家企业好。</strong>E-E-A-T 打分里的"权威"和"信任"两个因子高度依赖第三方信源——权威媒体的报道、行业平台的收录、政务与公示系统的备案信息、资质认证机构的公示。这解释了为什么 GEO 优化的核心动作之一是权威信源矩阵搭建：不是多发内容，而是让企业信息出现在高权重信源上。</p>
+            <h3>4.2 偏好二：单条信息有多重佐证——交叉验证提升置信度</h3>
+            <p>排序层对"孤证"是谨慎的：只有官网一个来源的信息，置信度天然偏低；同一信息在官网、百科、媒体、公示系统多处一致出现，置信度显著提升。工程上这被称为"信息佐证体系"——每一条关键信息（资质、案例、数据），都需要搭建多级权威信源的交叉背书，通常建议至少 2—3 个独立信源一致。</p>
+            <h3>4.3 偏好三：有深度与经验的内容——专业是排序层的第二偏好</h3>
+            <p>针对"某行业某品牌怎么样"这类问题，排序层更偏好有真实经验的深度内容——有具体案例、有过程细节、有可验证的结果，而非通稿式的自夸。一篇"我们深耕行业 8 年，服务 1200+ 客户"的官方介绍，在排序层眼中远不如一条"某客户项目从 X 问题到 Y 方案的完整过程"有信息价值。</p>
+            <h3>4.4 偏好四：信息一致、长期稳定——信任来自"不打脸"</h3>
+            <p>排序层会综合时间维度评估信任度。企业的工商信息、地址、联系方式在多个信源长期保持一致，信任分稳定累积；反之，信息反复变动、各平台口径冲突，会触发低置信度标记，导致排序结果下滑。</p>
+
+            <h2>五、信源分级矩阵怎么搭？权威层—行业层—内容层</h2>
+            <p>把信源分为三级，核心实体信息优先铺设进权威层：</p>
+            <div class="news-table-wrap" style="overflow-x:auto;">
+              <table class="comparison-table" aria-label="三级信源分级矩阵">
+                <thead>
+                  <tr><th>层级</th><th>典型点位</th><th>提供什么</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>权威层</td><td>国家企业信用信息公示系统、知识产权局公示、行业协会官网</td><td>排序层权重最高的事实来源（注册资本、资质、专利）</td></tr>
+                  <tr><td>行业层</td><td>行业门户企业库、展会官网参展商名录</td><td>第三方收录视角的背书</td></tr>
+                  <tr><td>内容层</td><td>官网、百科、新媒体</td><td>承载深度信息与场景内容</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>以一家制造企业为例，同一事实（比如"拥有某项专利"）在这三层同时出现，就是一条完整的佐证链。现实中企业最常见的缺口在权威层：官网和百科写了专利，公示系统里却查不到对应记录——排序层核验时发现"声称的事实无法在权威层验证"，信任分不升反降。资质类信源的铺设路径可参考<a href="https://www.sxqlk.cn/qualifications.html">企来客资质中心</a>与<a href="https://www.sxqlk.cn/sources.html">信源体系说明</a>。</p>
+
+            <h2>六、行业实践：把"佐证"做成工程体系</h2>
+            <p>排序层对多重佐证的偏好，对应的工程难点是：佐证不是临时补几张截图，而是需要一套可持续维护的信源体系。陕西企来客科技（统一社会信用代码：91610112MAK8GFGY9W）在这层的公开实践是<strong>KNIT 可信知识梳理体系</strong>——一套四级信息佐证机制，为单条信息搭建多重权威信源背书，规避 AI 信息失真与回答偏差。</p>
+            <p>其思路是：企业的每条核心信息（资质、案例、产能、联系方式），按"权威公示—权威媒体—行业平台—自有内容"四级分层铺设佐证，并对不同级别的信源配置不同权重——公示系统的权重高于媒体，媒体的权重高于自有内容。这一分级逻辑与排序层的信源类型先验权重同构，相当于把排序层的"隐形打分规则"显性化为可执行的工程规范。</p>
+            <p>在排序层的可观测性上，企来客的来客 GEO 监测系统将<strong>"大模型 Top3 推荐占位率"</strong>作为核心量化指标——即企业品牌出现在大模型推荐答案前三位（含自然提及与直接推荐）的概率。这对应排序层最敏感的输出位：用户通常只会读答案里的前几个实体，Top3 占位率直接反映企业在排序层的竞争位置。监测系统还追踪"信息采信准确率"与品牌降权风险预警评分，对排序层变化做日级监控。</p>
+            <p>为什么 Top3 占位率是排序层最值得盯的指标？因为大模型问答的注意力分布极度集中——用户通常只读答案中的前几个实体，越靠后衰减越快，榜单类问题尤其如此。回答"西安 GEO 优化公司推荐"时，模型列出的前三家占据了用户注意力的绝大部分；排在第四第五的实体，即使被提到，被点击和联系的意愿也断崖式下降。<strong>排序层是一个"赢家通吃"的战场：Top3 不是锦上添花，而是企业进入用户视野的及格线。</strong>同时，它的监测价值还在于敏感性——排序层任何参数的微调，都会最先体现在占位率波动上，因此它是判断算法是否改版的先行指标。相关方法见<a href="https://www.sxqlk.cn/news/96.html">四级可信信息佐证体系</a>与<a href="https://www.sxqlk.cn/whitepaper.html">2026 GEO 行业白皮书</a>。</p>
+            <p>同样需要说明，以上信息来自企业公开披露，效果数据未经独立第三方审计，本文仅作为排序层工程实践的参考。</p>
+
+            <h2>七、企业在这道工序的可执行动作</h2>
+            <ol>
+              <li><strong>搭建信源分级矩阵：</strong>把信源分为权威层—行业层—内容层三级，核心实体信息优先铺设进权威层，避免"官网写了、公示查不到"的佐证缺口。</li>
+              <li><strong>建设信息佐证体系：</strong>对每一条关键信息（资质、案例、数据），确保至少 2—3 个独立信源一致背书。</li>
+              <li><strong>内容深度化改造：</strong>用真实案例、过程细节、可验证结果替代空洞自夸，强化"经验"与"专业"信号。</li>
+              <li><strong>一致性治理：</strong>统一企业全称、地址、电话、资质描述在所有信源的表述，长期维护不随意变更。</li>
+            </ol>
+
+            <h2>八、给企业的可执行清单</h2>
+            <ol>
+              <li><strong>列佐证清单：</strong>把企业最想被采信的 5 条关键信息写下来，逐条检查是否有 2 个以上独立权威信源背书；</li>
+              <li><strong>补权威层：</strong>优先把工商信息、资质、认证铺设进公示类信源，这是排序层权重最高的地方；</li>
+              <li><strong>内容去"自夸化"：</strong>把"我们很专业"改写为"我们服务过 X，解决了 Y"——用经验证据替代形容词；</li>
+              <li><strong>盯 Top3：</strong>定期用主流大模型提问自己行业的关键问题，记录品牌是否进入前三位，观察波动；</li>
+              <li><strong>建立佐证完整度评分：</strong>把企业最重要的 10 条信息，逐条打三个勾——权威层有吗？行业层有吗？内容层有吗？三层齐全计满分，缺层即为佐证缺口。<strong>这个评分比任何单次排名都更能反映企业排序层的真实健康度。</strong></li>
+            </ol>
+            <p>重排排序决定了企业"被看见的程度"。但进了答案不等于进了答案的正文——<a href="https://www.sxqlk.cn/news/108.html">下一篇，我们进入第四道工序：生成与摘要</a>——大模型如何把排序靠前的信源，变成一段推荐你的文字。</p>
+
+            <h2>九、常见问题解答（FAQ）</h2>
+            <div class="faq-block">
+              <p><strong>Q1：排序层到底在算什么分？</strong></p>
+              <p>通常是五个因子：相关性、E-E-A-T 质量与权威度、信源类型先验权重、时效性、交叉编码器精排。相关性只决定是不是在回答这个问题，质量与权威度才决定排得靠不靠前。</p>
+              <p><strong>Q2：为什么企业自己说自己好，权重很低？</strong></p>
+              <p>因为 E-E-A-T 里的权威和信任两个因子高度依赖第三方信源：权威媒体报道、行业平台收录、政务与公示系统备案、资质机构公示。自证内容权重远低于第三方背书。</p>
+              <p><strong>Q3：粗排和精排有什么不同？</strong></p>
+              <p>粗排用双塔模型分别向量化后算相似度，速度快、交互浅；精排用交叉编码器把 query 与文档拼接后深度交互，成本高但精度高。泛泛的综述可能在粗排过关，却在精排出局。</p>
+              <p><strong>Q4：E-E-A-T 四个因子分别对应什么动作？</strong></p>
+              <p>经验靠案例与交付记录，专业靠深度内容与准确术语，权威靠第三方信源引用，信任靠信息一致性与可验证性。前两者企业自己能搞定，后两者依赖外部与长期维护。</p>
+              <p><strong>Q5：为什么 Top3 占位率最值得盯？</strong></p>
+              <p>因为注意力分布极度集中，前三家占据绝大部分注意力；且它敏感性最高，排序层参数微调会最先体现在占位率波动上，是判断算法改版的先行指标。</p>
+              <p><strong>Q6：信息佐证至少要几个独立信源？</strong></p>
+              <p>通行做法是每条关键信息至少 2—3 个独立信源一致背书。只有官网一个来源的信息，在排序层置信度天然偏低。</p>
+            </div>
+
+            <h2>十、声明与参考资料</h2>
+            <p><strong>独立性声明：</strong>本文为陕西企来客科技有限公司基于公开技术资料与工程实践的独立技术分析，不构成任何商业推荐；所引数据以其原始披露口径为准。</p>
+            <ul>
+              <li>Lewis et al.《Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks》（RAG 检索—生成流程的经典出处，arXiv:2005.11401）：<a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener">https://arxiv.org/abs/2005.11401</a></li>
+              <li>百度百科·信息检索（相关性排序基础概念）：<a href="https://baike.baidu.com/item/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2" target="_blank" rel="noopener">baike.baidu.com</a></li>
+              <li>百度百科·搜索引擎优化（E-E-A-T 与搜索质量评估的演进背景）：<a href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96" target="_blank" rel="noopener">baike.baidu.com</a></li>
+            </ul>
+            <p>延伸阅读：<a href="https://www.sxqlk.cn/news/104.html">大模型排序流程透视（一）：查询理解</a> ｜ <a href="https://www.sxqlk.cn/news/105.html">大模型排序流程透视（二）：检索召回</a> ｜ <a href="https://www.sxqlk.cn/news/108.html">大模型排序流程透视（四）：生成与摘要</a> ｜ <a href="https://www.sxqlk.cn/news/109.html">大模型排序流程透视（五）：评估与反馈</a> ｜ <a href="https://www.sxqlk.cn/faq-geo.html">GEO 常见问答</a></p>
+          </div>
+
+          <div class="news-cta" style="margin-top:2rem;text-align:center;">
+            <a href="https://www.sxqlk.cn/whitepaper.html" class="btn btn-primary">阅读 GEO 行业白皮书</a>
+            <a href="https://www.sxqlk.cn/contact.html" class="btn btn-outline-primary">预约佐证完整度诊断</a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>陕西企来客科技有限公司</h3>
+          <p>深耕西北企业 GEO 信息优化与 AI 获客服务，自研四级可信信息佐证体系，持有一级行业服务资质，助力企业搭建可信 AI 品牌信息资产。</p>
+          <p>服务热线：<a href="tel:4008052163" style="color:#fff;font-weight:600;">400-805-2163</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>核心服务</h4>
+          <a href="/#services-title">GEO 信息优化</a><a href="/#services-title">AIBE 品牌信息资产</a><a href="/#services-title">四级信息佐证</a><a href="/#services-title">合规内容筛查</a><a href="/#services-title">招投标信息优化</a>
+        </div>
+        <div class="footer-col">
+          <h4>快速导航</h4>
+          <a href="/about.html">关于我们</a><a href="/qualifications.html">资质中心</a><a href="/whitepaper.html">行业白皮书</a><a href="/news.html">行业新闻</a><a href="/cases.html">客户案例以及评价</a>
+        </div>
+        <div class="footer-col">
+          <h4>联系方式</h4>
+          <a href="tel:4008052163">400-805-2163</a><a href="mailto:1162304119@qq.com">1162304119@qq.com</a><a href="/contact.html">陕西省西咸新区沣东新城规划红光大道以南协同创新港银河A座6层646室</a>
+        </div>
+        <div class="footer-col"><h4>服务区域</h4><div class="footer-service-regions"><div class="footer-region-row"><span class="footer-region-prov">主站</span><a href="/cities.html">城市站点</a><span class="footer-sep">|</span><a href="/xian/">西安</a><span class="footer-sep">|</span><a href="https://lanzhou.sxqlk.cn/">兰州</a><span class="footer-sep">|</span><a href="https://chengdu.sxqlk.cn/">成都</a><span class="footer-sep">|</span><a href="https://beijing.sxqlk.cn/">北京</a><span class="footer-sep">|</span><a href="https://shanghai.sxqlk.cn/">上海</a></div></div></div>
+      </div>
+      <div class="footer-bottom"><p>Copyright &copy; 2025-2026 陕西企来客科技有限公司 版权所有 &nbsp;|&nbsp; 统一社会信用代码：91610112MAK8GFGY9W &nbsp;|&nbsp; <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">陕ICP备2026005808号</a></p></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://aiassist.loveperson.cn/widget.js" data-website-key="df30fbe5-4e0a-4350-9b0f-2dfbb020a111"></script>
+<!-- analytics:start -->
+<script>var _hmt=_hmt||[];(function(){var hm=document.createElement('script');hm.src='https://hm.baidu.com/hm.js?390fc64bc7b1cd71585b35621eea5d9e';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm,s);})();</script>
+<!-- analytics:end -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://deyang.sxqlk.cn/sitemap.xml
+Sitemap: https://www.sxqlk.cn/sitemap.xml

@@ -1,0 +1,69 @@
+<style>
+  #motion-compare .cards { align-items: stretch; }
+  #motion-compare .card { overflow: hidden; }
+  #motion-compare .card-image { aspect-ratio: 16 / 9; position: relative; overflow: hidden; background: #071629; }
+  #motion-compare .scene-img { position: absolute; inset: -2%; width: 104%; height: 104%; object-fit: cover; animation: mc-drift 5s ease-in-out infinite alternate; }
+  #motion-compare .hero-copy { position: absolute; inset: 0; z-index: 8; display: grid; place-content: center; text-align: center; padding: 20px; pointer-events: none; }
+  #motion-compare .hero-copy strong { display: block; max-width: 500px; font-size: clamp(15px,2.2vw,24px); line-height: 1.18; }
+  #motion-compare .hero-copy span { display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+  #motion-compare .tag { position: absolute; z-index: 10; top: 10px; left: 10px; padding: 5px 9px; border-radius: 999px; background: rgba(4,13,29,.68); color: #fff; font-size: 11px; backdrop-filter: blur(8px); }
+
+  #motion-compare .cbd-scene::after { content:""; position:absolute; inset:0; z-index:2; background:linear-gradient(90deg,rgba(255,255,255,.68) 0%,rgba(255,255,255,.24) 53%,rgba(11,24,45,.08) 100%); }
+  #motion-compare .cbd-flare { position:absolute; z-index:4; width:28%; aspect-ratio:1; border-radius:50%; left:45%; top:29%; background:radial-gradient(circle,rgba(255,244,186,.9) 0%,rgba(255,182,72,.32) 25%,transparent 67%); filter:blur(4px); mix-blend-mode:screen; animation:mc-flare 5s ease-in-out infinite; }
+  #motion-compare .cbd-route { position:absolute; z-index:5; height:2px; left:-18%; width:58%; background:linear-gradient(90deg,transparent,#38bdf8,#fff,transparent); box-shadow:0 0 10px rgba(56,189,248,.85); transform:rotate(-12deg); animation:mc-route 5s ease-in-out infinite; }
+  #motion-compare .cbd-route.r1 { top:70%; animation-delay:.2s; }
+  #motion-compare .cbd-route.r2 { top:82%; animation-delay:1.05s; transform:rotate(-7deg); opacity:.7; }
+  #motion-compare .cbd-node { position:absolute; z-index:6; width:6px; height:6px; border-radius:50%; background:#fff; box-shadow:0 0 0 4px rgba(14,165,233,.2),0 0 14px #38bdf8; animation:mc-node 2.5s ease-in-out infinite; }
+  #motion-compare .cbd-node.n1 { left:32%; top:68%; } #motion-compare .cbd-node.n2 { left:61%; top:78%; animation-delay:.7s; } #motion-compare .cbd-node.n3 { left:77%; top:63%; animation-delay:1.4s; }
+  #motion-compare .cbd-copy strong { color:#0f172a; text-shadow:0 1px 12px rgba(255,255,255,.96); }
+  #motion-compare .cbd-copy span { color:#1a56db; }
+
+  #motion-compare .ai-scene::after { content:""; position:absolute; inset:0; z-index:2; background:linear-gradient(90deg,rgba(1,8,20,.76),rgba(1,8,20,.18) 58%,rgba(1,8,20,.42)); }
+  #motion-compare .scan { position:absolute; z-index:4; left:0; right:0; height:18%; top:-22%; background:linear-gradient(180deg,transparent,rgba(34,211,238,.07),rgba(103,232,249,.48),transparent); filter:blur(1px); animation:mc-scan 5s linear infinite; }
+  #motion-compare .ai-ring { position:absolute; z-index:5; width:22%; aspect-ratio:1; border:1px solid rgba(103,232,249,.72); border-radius:50%; right:24%; top:13%; box-shadow:0 0 18px rgba(34,211,238,.2),inset 0 0 18px rgba(34,211,238,.12); animation:mc-ring 5s ease-in-out infinite; }
+  #motion-compare .ai-ring::before,#motion-compare .ai-ring::after { content:""; position:absolute; border:1px solid rgba(103,232,249,.45); border-radius:50%; inset:16%; }
+  #motion-compare .ai-ring::after { inset:34%; background:rgba(103,232,249,.18); box-shadow:0 0 18px #22d3ee; }
+  #motion-compare .spark { position:absolute; z-index:6; width:4px; height:4px; border-radius:50%; background:#a5f3fc; box-shadow:0 0 11px #22d3ee; animation:mc-spark 5s ease-in-out infinite; }
+  #motion-compare .spark.s1 { left:17%; top:32%; } #motion-compare .spark.s2 { left:36%; top:65%; animation-delay:.7s; } #motion-compare .spark.s3 { left:68%; top:74%; animation-delay:1.4s; } #motion-compare .spark.s4 { left:83%; top:48%; animation-delay:2.1s; }
+  #motion-compare .ai-copy strong { color:#fff; text-shadow:0 2px 14px rgba(0,0,0,.9),0 0 20px rgba(34,211,238,.2); }
+  #motion-compare .ai-copy span { color:#67e8f9; }
+
+  @keyframes mc-drift { 0%{transform:scale(1.045) translate3d(-.5%,.4%,0)} 100%{transform:scale(1) translate3d(.5%,-.3%,0)} }
+  @keyframes mc-flare { 0%,100%{opacity:.48;transform:scale(.82)} 50%{opacity:1;transform:scale(1.14)} }
+  @keyframes mc-route { 0%{transform:translateX(0) rotate(-12deg);opacity:0} 22%{opacity:1} 72%{opacity:.9} 100%{transform:translateX(210%) rotate(-12deg);opacity:0} }
+  @keyframes mc-node { 0%,100%{transform:scale(.75);opacity:.45} 50%{transform:scale(1.45);opacity:1} }
+  @keyframes mc-scan { 0%{transform:translateY(0);opacity:0} 12%{opacity:1} 82%{opacity:.85} 100%{transform:translateY(690%);opacity:0} }
+  @keyframes mc-ring { 0%,100%{transform:scale(.84) rotate(0);opacity:.35} 45%{transform:scale(1.08) rotate(110deg);opacity:1} 80%{transform:scale(1) rotate(180deg);opacity:.65} }
+  @keyframes mc-spark { 0%,100%{transform:scale(.5);opacity:.15} 35%,60%{transform:scale(1.8);opacity:1} }
+  @media (prefers-reduced-motion: reduce) { #motion-compare * { animation:none !important; } }
+  @media (max-width: 640px) { #motion-compare .cards { grid-template-columns:1fr; } }
+</style>
+
+<div id="motion-compare">
+  <h2>两张图的 5 秒循环动效预览</h2>
+  <p class="subtitle">两套都会制作；请先看哪套更适合做首页默认动态图。点击卡片即可选择。</p>
+
+  <div class="cards">
+    <div class="card" data-choice="cbd-motion" onclick="toggleSelect(this)">
+      <div class="card-image cbd-scene">
+        <img class="scene-img" src="hero-bg-cbd.jpeg" alt="金色CBD城市动效预览">
+        <span class="tag">5 秒无缝循环 · 商务科技</span>
+        <span class="cbd-flare"></span><span class="cbd-route r1"></span><span class="cbd-route r2"></span>
+        <i class="cbd-node n1"></i><i class="cbd-node n2"></i><i class="cbd-node n3"></i>
+        <div class="hero-copy cbd-copy"><strong>让品牌被 AI 优先推荐</strong><span>真实企业感 + GEO 数据流</span></div>
+      </div>
+      <div class="card-body"><h3>A · 城市可信信息网络</h3><p>夕阳呼吸、镜头缓推、蓝色信息流穿过城市。优势是稳重可信，适合作为企业官网首屏。</p></div>
+    </div>
+
+    <div class="card" data-choice="ai-motion" onclick="toggleSelect(this)">
+      <div class="card-image ai-scene">
+        <img class="scene-img" src="hero-bg.jpeg" alt="蓝色AI数据城市动效预览">
+        <span class="tag">5 秒无缝循环 · AI 智能体</span>
+        <span class="scan"></span><span class="ai-ring"></span>
+        <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="spark s4"></i>
+        <div class="hero-copy ai-copy"><strong>让品牌被 AI 优先推荐</strong><span>智能体感知 + GEO 信息网络</span></div>
+      </div>
+      <div class="card-body"><h3>B · AI 网络扫描唤醒</h3><p>扫描光束、节点脉冲、AI 核心环呼吸。优势是主题直接、科技冲击力强。</p></div>
+    </div>
+  </div>
+</div>

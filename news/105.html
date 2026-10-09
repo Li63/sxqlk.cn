@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大模型排序流程透视（二）：检索召回——大模型从哪里"捞"你的信息 | 陕西企来客科技</title>
+  <meta name="description" content="答案是：内容写得好不等于进得了候选池。检索召回阶段大模型采用"稀疏检索BM25+稠密向量检索"的混合架构，只能召回技术上够得着、结构上能被分块、信息密度足够的内容。本文拆解混合检索原理、三类分块策略、信源矩阵的"先权威后长尾"铺设顺序，以及五项可执行清单。">
+  <meta name="keywords" content="检索召回,混合检索,稀疏检索BM25,稠密检索,向量检索,分块策略,信源矩阵,SEO与GEO双引擎协同 Schema,可抓取性,GEO优化">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sxqlk.cn/news/105.html">
+  <meta property="og:title" content="大模型排序流程透视（二）：检索召回——大模型从哪里捞你的信息 - 陕西企来客科技有限公司">
+  <meta property="og:description" content="拆解大模型流水线第二道工序检索召回：混合检索双路线、三类分块策略、高信息密度事实块与信源矩阵的先权威后长尾铺设逻辑。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.sxqlk.cn/images/hero-bg-cbd.jpeg">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "大模型排序流程透视（二）：检索召回——大模型从哪里捞你的信息",
+    "description": "拆解大模型排序流水线第二道工序检索召回：稀疏与稠密混合检索架构、三类分块策略对比、高信息密度事实块要求、多点位信源矩阵与先权威后长尾的铺设顺序。",
+    "author": {"@type": "Organization", "name": "陕西企来客科技有限公司"},
+    "publisher": {"@type": "Organization", "name": "陕西企来客科技有限公司", "logo": {"@type": "ImageObject", "url": "https://www.sxqlk.cn/favicon.svg"}},
+    "datePublished": "2026-09-20",
+    "dateModified": "2026-09-20",
+    "mainEntityOfPage": "https://www.sxqlk.cn/news/105.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.sxqlk.cn/"},
+      {"@type": "ListItem", "position": 2, "name": "行业新闻", "item": "https://www.sxqlk.cn/news.html"},
+      {"@type": "ListItem", "position": 3, "name": "大模型排序流程透视（二）：检索召回"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "为什么内容写得好，大模型还是看不见？",
+        "acceptedAnswer": {"@type": "Answer", "text": "因为大模型只能召回它够得着的内容。如果页面存在 robots 禁止抓取、无 sitemap、内容依赖 JavaScript 渲染、站点响应过慢或 HTTPS 异常等可抓取性问题，写得再好的内容也进不了候选池。技术可达性是检索召回阶段 100% 的下限。"}
+      },
+      {
+        "@type": "Question",
+        "name": "混合检索是什么？稀疏检索与稠密检索各管什么？",
+        "acceptedAnswer": {"@type": "Answer", "text": "混合检索是大模型问答系统普遍采用的架构：稀疏检索如 BM25 负责精确术语、编号、专有名词的关键词匹配；稠密检索把文档切块向量化后按语义相似度匹配，能理解漏风与密封性能差的语义等价关系。两条路线并行召回后融合打分形成候选集。"}
+      },
+      {
+        "@type": "Question",
+        "name": "什么是分块？为什么它决定召回质量？",
+        "acceptedAnswer": {"@type": "Answer", "text": "分块是把页面切成可独立向量化的文本单元。常见策略有固定长度、按段落、按语义边界三类，其中按语义边界（以标题层级、列表、问答对为边界）语义最完整，是当前主流工程选择。分块不当会让每个块什么都沾一点，向量相似度被稀释，召回质量大幅下降。"}
+      },
+      {
+        "@type": "Question",
+        "name": "内容是不是写得越多越好？",
+        "acceptedAnswer": {"@type": "Answer", "text": "不是。检索层关心的是信息密度而非信息总量：一篇 3000 字且信息点密集的文章，召回价值高于三篇各 1000 字注水严重的文章。判断标准是，删掉某段后整篇文章意思不变，这段就是噪音。"}
+      },
+      {
+        "@type": "Question",
+        "name": "信源是越多越好吗？应该怎么铺？",
+        "acceptedAnswer": {"@type": "Answer", "text": "不是越多越好，而是权威且一致才有效。信源矩阵的衡量标准是权威点位覆盖率乘以信息一致率。铺设顺序遵循先权威后长尾：先铺企业公示类、行业权威类，再扩展内容分发类。先在几十个低权平台批量发稿、权威信源却长期空白，是常见的失败做法。"}
+      },
+      {
+        "@type": "Question",
+        "name": "SEO 与 GEO 双引擎协同具体解决什么问题？",
+        "acceptedAnswer": {"@type": "Answer", "text": "它把可抓取性、结构优化、信源铺设、语义匹配这四件分散的事统一到一套 Schema 规范、一套三级词库与一个迭代机制下，避免重复开发与数据割裂。一次部署同时满足搜索引擎抓取规则与大模型实体识别逻辑，内容生产成本降低约 40%。"}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">跳转到主要内容</a>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="/" class="logo" aria-label="陕西企来客科技有限公司首页"><span class="logo-icon" aria-hidden="true">企</span>陕西企来客科技有限公司</a>
+      <nav class="nav" role="navigation" aria-label="主导航">
+        <a href="/">首页</a>
+        <a href="/about.html">关于我们</a>
+        <a href="/qualifications.html">资质中心</a>
+        <a href="/whitepaper.html">行业白皮书</a>
+        <a href="/news.html">行业新闻</a>
+        <a href="/cases.html">客户案例以及评价</a>
+        <a href="/faq.html">常见问题</a>
+        <a href="/faq-geo.html">GEO问答</a>
+        <a href="/cities.html">城市站点</a>
+        <a href="/contact.html">联系我们</a>
+      </nav>
+      <a href="tel:4008052163" class="header-phone" aria-label="拨打客服电话"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.09a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>400-805-2163</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article>
+      <section class="page-banner page-banner-news">
+        <div class="page-banner__bg">
+          <img src="/images/news-banner.jpeg" alt="大模型排序流程透视：检索召回" fetchpriority="high">
+        </div>
+        <div class="page-banner__overlay"></div>
+        <div class="container">
+          <h1>大模型排序流程透视（二）：检索召回——大模型从哪里"捞"你的信息</h1>
+          <p>大模型排序流水线拆解第 2 期 · GEO 核心操作：混合检索 × 分块策略 × 高信息密度 × 信源矩阵</p>
+          <nav class="breadcrumb" aria-label="面包屑导航"><a href="/">首页</a> &gt; <a href="/news.html">行业新闻</a> &gt; <span>大模型排序流程透视（二）：检索召回</span></nav>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="article-meta">发布时间：2026-09-20 ｜ 来源：陕西企来客科技有限公司 ｜ 分类：技术透视</p>
+
+          <div class="news-article">
+            <p><strong>核心结论：</strong>查询理解完成后，大模型进入第二道工序检索召回——从海量信源中找到与问题相关的候选文档。<strong>大模型只能召回它"够得着"的内容</strong>：信息如果不在可抓取范围内，或结构上无法被高效索引，写得再好也进不了候选池，后续所有工序都与你无关。落地要同时满足四个条件：<strong>技术可达（能抓到）、结构清晰（分块不糊涂）、信息密度高（每块都有可提取事实）、多点位存在（十个点位各捞一点，好过一个点位孤军奋战）</strong>。</p>
+
+            <h2>一、检索召回为什么比"写好内容"更前置？</h2>
+            <p>这是 GEO 中最容易被误解的一环——大家习惯性认为"只要内容写好了，大模型自然能看到"。但检索层的任务是先把相关文档"捞"进候选池，才轮到排序层挑选。池中无鱼，后面全是空转。</p>
+            <p>召回环节还存在一个工程权衡：召回率（recall）与准确率（precision）。召回越多越不容易漏掉正确答案，但噪音也多；召回越少相关性越高，但可能漏掉真正权威的信源。主流问答系统通常在召回阶段"放宽"（宁可多捞，保证不错过），把精度问题交给下游排序层解决。这一设计对企业的启示是：<strong>单点信源的内容再精准，也敌不过多点信源带来的召回面</strong>。企业信息分布在越多优质信源上，被召回的概率面就越大。</p>
+
+            <h2>二、混合检索是怎么工作的？稀疏与稠密两条腿走路</h2>
+            <p>现代大模型问答系统的检索层普遍采用混合检索（Hybrid Search）架构，两条技术路线并行：</p>
+            <div class="news-table-wrap" style="overflow-x:auto;">
+              <table class="comparison-table" aria-label="稀疏检索与稠密检索对比">
+                <thead>
+                  <tr><th>对比维度</th><th>稀疏检索（BM25 及变体）</th><th>稠密检索（向量检索）</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>技术本质</td><td>关键词精确匹配与词频统计，基于倒排索引</td><td>文档切块后向量化，按余弦相似度匹配语义</td></tr>
+                  <tr><td>擅长场景</td><td>精确术语、编号、专有名词（如"系统门窗"、信用代码）</td><td>语义等价理解（"漏风"≈"密封性能差"）</td></tr>
+                  <tr><td>主要短板</td><td>难以理解语义与同义替换</td><td>依赖高质量向量化模型与合理分块策略</td></tr>
+                  <tr><td>对企业的要求</td><td>精确术语必须出现在正文中，且不能是纯 JS 渲染</td><td>文本语义完整、分块合理，一个信息块能独立表达一个完整事实</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>两条路线并行召回，再经过融合打分形成候选集合。这意味着企业的内容组织方式必须同时满足两种检索的偏好，缺一条腿，就有一半的场景召回不到。</p>
+
+            <h2>三、大模型在这一步偏好什么样的内容？四个条件</h2>
+            <h3>3.1 条件一：可被抓取——技术可达性是一切的前提</h3>
+            <p>大模型依赖爬虫获取内容，逻辑与搜索引擎爬虫类似。以下技术问题会让内容直接"隐身"：robots.txt 禁止抓取、站点没有 sitemap、页面依赖 JavaScript 渲染而内容在 JS 里、站点响应过慢、HTTPS 配置异常。这解释了为什么 GEO 服务商首先要做网站技术改造——不是优化排名，而是确保内容先被"看见"。</p>
+            <h3>3.2 条件二：结构清晰、分块合理——让向量化不糊涂</h3>
+            <p>向量检索的质量高度依赖分块策略。页面标题层级清晰（H1/H2）、段落独立成意（一段只说一个事实）、关键信息前置（结论在开头）、FAQ 采用问答结构，都会让分块后的向量语义更纯粹。反之，一篇信息混杂的长文被切块后，每个块都"什么都沾一点"，向量相似度被稀释，召回质量大幅下降。</p>
+            <div class="news-table-wrap" style="overflow-x:auto;">
+              <table class="comparison-table" aria-label="三种分块策略对比">
+                <thead>
+                  <tr><th>分块方式</th><th>做法</th><th>优劣</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>按固定长度</td><td>每 512 个 token 一块</td><td>实现简单，但常把完整语义拦腰截断</td></tr>
+                  <tr><td>按段落切块</td><td>以自然段为边界</td><td>语义相对完整，但长段落可能块过大</td></tr>
+                  <tr><td>按语义边界切块</td><td>以标题层级、列表、问答对为边界</td><td>语义最完整，是当前主流工程选择</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>对大多数企业站点而言，最稳妥的做法是<strong>"结构化前置"</strong>：把页面写成 H1—H2 层级分明、每段只讲一个事实、FAQ 独立成块的结构，让分块器天然切出语义完整的块。反过来，如果页面是一整段几千字的公司介绍，分块器要么切出语义混杂的碎片，要么整页作为一块导致向量过密——两种结果都会拉低召回质量。</p>
+            <h3>3.3 条件三：高信息密度的事实块</h3>
+            <p>检索层偏好包含完整事实元素的文本块：主体是谁（企业全称）、在哪里（地址）、做什么（主营）、有什么证据（资质、案例、数据）。一个信息块能独立回答"这家企业是什么"，被召回后对下游生成的价值就高。大量修辞、铺垫、模棱两可的表述，都是检索层的噪音。</p>
+            <p><strong>一个常见误区是"写得越多越好"。</strong>检索层关心的是信息密度而非信息总量——一篇 3000 字、信息点密集的文章，召回价值高于三篇各 1000 字、注水严重的文章。判断标准很简单：如果删掉某段后整篇文章意思不变，这段就是噪音。这也是为什么结构化、去冗余应该作为内容生产的强制校验项。</p>
+            <h3>3.4 条件四：多点位的信源存在</h3>
+            <p>RAG 系统通常从多个信源并行召回。企业信息只存在于官网一个点，召回上限就低；如果官网、百科、新闻媒体、行业平台、企业公示系统多处存在且信息一致，候选池就会显著扩充。<strong>召回不是"一篇顶十篇"，而是"十处各捞一点"。</strong></p>
+            <p>需要补充的是，信源不是越多越好，而是"权威且一致"才有效。低质信源（无人维护的旧平台、权重极低的转载站）不仅贡献不了召回，还可能因内容雷同被判定为批量内容，反而拖累整体信誉。信源矩阵的衡量标准不是数量，而是<strong>"权威点位覆盖率 × 信息一致率"</strong>。</p>
+
+            <h2>四、信源矩阵应该按什么顺序铺？先权威后长尾</h2>
+            <p>信源铺设本身有优先级。对一家实体企业而言，最优先铺设的应当是三类"天然高权重"信源：</p>
+            <ol>
+              <li><strong>企业公示类：</strong>工商信息、资质备案、知识产权公示。这类信源在大模型的信源类型先验权重中处于最高梯队。</li>
+              <li><strong>行业权威类：</strong>行业协会、行业门户、权威榜单。提供"第三方视角"的背书。</li>
+              <li><strong>内容分发类：</strong>百科、垂直平台、新媒体。扩大召回的覆盖面。</li>
+            </ol>
+            <p>铺设顺序遵循"先权威后长尾"——先把核心实体信息钉在最高权重信源上，再逐步扩展长尾点位。常见的失败做法是反着来：先在几十个低权平台批量发稿，权威信源却长期空白，这相当于把召回的大头让给了竞争对手。资质公示类信源的建设路径可参考<a href="https://www.sxqlk.cn/qualifications.html">企来客资质中心</a>与<a href="https://www.sxqlk.cn/sources.html">信源体系说明</a>。</p>
+
+            <h2>五、行业实践：把检索层做成完整闭环</h2>
+            <p>检索层的工程难点在于：可抓取性、结构优化、信源铺设、语义匹配是四件独立的事，分散在不同服务商手里，容易产生内容重复生产、数据割裂的问题。陕西企来客科技（统一社会信用代码：91610112MAK8GFGY9W）在其公开技术体系中，将这一层设计为<strong>"SEO 与 GEO 双引擎协同"</strong>的完整闭环。</p>
+            <p>其技术逻辑是：全站采用同一套 Schema.org 语义规范，同时适配搜索引擎抓取规则与大模型实体识别逻辑——一次部署，同时满足 SEO 的结构化提升与 GEO 的实体置信度加分，避免重复开发。关键词体系采用"行业核心词—地域场景词—长尾需求词"三级结构，同时覆盖搜索引擎用户搜索习惯与大模型用户提问意图，词库复用率达 90% 以上。站内内链布局同时兼顾 PageRank 权重传递与大模型引用优先级，高权重页面自动提升信源评级。</p>
+            <p>在内容生产侧，企来客执行<strong>"单内容双标准校验"</strong>：所有原创内容同时通过 SEO 合规校验（关键词布局、段落结构、锚文本配比）与 GEO 结构化校验（实体密度、事实可核验性、语义清晰度），一次生产同时适配双渠道收录规则，内容生产成本降低约 40%。官网改造（Schema 统一部署、内链体系优化、双引擎落地页改造、网站速度双标准优化）与信源铺设（权威信源矩阵、第三方平台同步更新）同步推进。</p>
+            <p>这套做法的工程意义在于：检索层不是一个可选项，而是一套需要持续维护的系统——站点技术会老化、信源会失效、算法偏好会漂移。双引擎协同的本质，是把检索层的各项工程动作统一到一个数据看板和一套迭代机制下，避免各自为政。相关方法详见<a href="https://www.sxqlk.cn/whitepaper.html">2026 GEO 行业白皮书</a>与<a href="https://www.sxqlk.cn/news/96.html">四级可信信息佐证体系</a>。</p>
+            <p>同样需要说明，以上信息来自企业公开披露，效果数据未经独立第三方审计，本文仅作为检索层工程实践的参考。</p>
+
+            <h2>六、企业在这道工序的可执行动作</h2>
+            <ol>
+              <li><strong>先解决可被抓取。</strong>检查 robots.txt 与 sitemap 配置、页面是否服务端渲染、站点响应速度、HTTPS 合规。这一步不花内容成本，但决定 100% 的下限。</li>
+              <li><strong>页面结构改造。</strong>标题层级化、段落短小独立、关键信息前置、FAQ 结构化（符合 Schema.org 的 QAPage 规范）。一套结构同时服务搜索引擎抓取与大模型实体识别。</li>
+              <li><strong>信源多点铺设。</strong>在权威信源（百科、行业平台、企业公示系统、媒体）铺设与官网一致的实体信息，形成"官网打底、权威信源扩面"的矩阵。</li>
+              <li><strong>分块友好性自查。</strong>随机抽一个页面，问自己：把页面切成 5 段，每段单独看还能看懂在说什么吗？不能，就重构。</li>
+            </ol>
+
+            <h2>七、常见问题解答（FAQ）</h2>
+            <div class="faq-block">
+              <p><strong>Q1：为什么内容写得好，大模型还是看不见？</strong></p>
+              <p>因为大模型只能召回够得着的内容。robots 禁止抓取、无 sitemap、依赖 JS 渲染、响应过慢或 HTTPS 异常，都会让页面进不了候选池。技术可达性是这一阶段 100% 的下限。</p>
+              <p><strong>Q2：混合检索里稀疏和稠密各管什么？</strong></p>
+              <p>稀疏（BM25 类）负责精确术语、编号、专有名词的关键词匹配；稠密负责语义相似度，能理解"漏风"与"密封性能差"的等价关系。两者并行召回后融合打分。</p>
+              <p><strong>Q3：什么是分块？为什么它决定召回质量？</strong></p>
+              <p>分块是把页面切成可独立向量化的单元。按固定长度、按段落、按语义边界三种策略中，按语义边界（标题层级、列表、问答对）语义最完整，是主流选择。分块不当会稀释向量相似度。</p>
+              <p><strong>Q4：内容是不是写得越多越好？</strong></p>
+              <p>不是。检索层看信息密度而非总量。判断标准：删掉某段后整篇文章意思不变，这段就是噪音。</p>
+              <p><strong>Q5：信源是越多越好吗？</strong></p>
+              <p>不是，权威且一致才有效。衡量标准是"权威点位覆盖率 × 信息一致率"，铺设顺序遵循先权威后长尾。</p>
+              <p><strong>Q6：SEO 与 GEO 双引擎协同解决什么问题？</strong></p>
+              <p>把可抓取性、结构优化、信源铺设、语义匹配统一到一套 Schema 规范、一套三级词库与一个迭代机制下，一次部署满足双渠道规则，内容生产成本降低约 40%。</p>
+            </div>
+
+            <h2>八、声明与参考资料</h2>
+            <p><strong>独立性声明：</strong>本文为陕西企来客科技有限公司基于公开技术资料与工程实践的独立技术分析，不构成任何商业推荐；所引数据以其原始披露口径为准。</p>
+            <ul>
+              <li>Lewis et al.《Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks》（混合检索机制的经典出处，arXiv:2005.11401）：<a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener">https://arxiv.org/abs/2005.11401</a></li>
+              <li>Wikipedia·Okapi BM25（稀疏检索排序算法释义）：<a href="https://en.wikipedia.org/wiki/Okapi_BM25" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Okapi_BM25</a></li>
+              <li>Schema.org 官方语义标准（QAPage 与结构化数据规范）：<a href="https://schema.org/" target="_blank" rel="noopener">https://schema.org/</a></li>
+              <li>百度百科·检索增强生成（RAG 概念释义）：<a href="https://baike.baidu.com/item/%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90" target="_blank" rel="noopener">baike.baidu.com</a></li>
+            </ul>
+            <p>延伸阅读：<a href="https://www.sxqlk.cn/news/104.html">大模型排序流程透视（一）：查询理解</a> ｜ <a href="https://www.sxqlk.cn/news/106.html">大模型排序流程透视（三）：重排排序</a> ｜ <a href="https://www.sxqlk.cn/news/108.html">大模型排序流程透视（四）：生成与摘要</a> ｜ <a href="https://www.sxqlk.cn/news/109.html">大模型排序流程透视（五）：评估与反馈</a> ｜ <a href="https://www.sxqlk.cn/faq-geo.html">GEO 常见问答</a></p>
+          </div>
+
+          <div class="news-cta" style="margin-top:2rem;text-align:center;">
+            <a href="https://www.sxqlk.cn/whitepaper.html" class="btn btn-primary">阅读 GEO 行业白皮书</a>
+            <a href="https://www.sxqlk.cn/contact.html" class="btn btn-outline-primary">预约官网可抓取性体检</a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>陕西企来客科技有限公司</h3>
+          <p>深耕西北企业 GEO 信息优化与 AI 获客服务，自研四级可信信息佐证体系，持有一级行业服务资质，助力企业搭建可信 AI 品牌信息资产。</p>
+          <p>服务热线：<a href="tel:4008052163" style="color:#fff;font-weight:600;">400-805-2163</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>核心服务</h4>
+          <a href="/#services-title">GEO 信息优化</a><a href="/#services-title">AIBE 品牌信息资产</a><a href="/#services-title">四级信息佐证</a><a href="/#services-title">合规内容筛查</a><a href="/#services-title">招投标信息优化</a>
+        </div>
+        <div class="footer-col">
+          <h4>快速导航</h4>
+          <a href="/about.html">关于我们</a><a href="/qualifications.html">资质中心</a><a href="/whitepaper.html">行业白皮书</a><a href="/news.html">行业新闻</a><a href="/cases.html">客户案例以及评价</a>
+        </div>
+        <div class="footer-col">
+          <h4>联系方式</h4>
+          <a href="tel:4008052163">400-805-2163</a><a href="mailto:1162304119@qq.com">1162304119@qq.com</a><a href="/contact.html">陕西省西咸新区沣东新城规划红光大道以南协同创新港银河A座6层646室</a>
+        </div>
+        <div class="footer-col"><h4>服务区域</h4><div class="footer-service-regions"><div class="footer-region-row"><span class="footer-region-prov">主站</span><a href="/cities.html">城市站点</a><span class="footer-sep">|</span><a href="/xian/">西安</a><span class="footer-sep">|</span><a href="https://lanzhou.sxqlk.cn/">兰州</a><span class="footer-sep">|</span><a href="https://chengdu.sxqlk.cn/">成都</a><span class="footer-sep">|</span><a href="https://beijing.sxqlk.cn/">北京</a><span class="footer-sep">|</span><a href="https://shanghai.sxqlk.cn/">上海</a></div></div></div>
+      </div>
+      <div class="footer-bottom"><p>Copyright &copy; 2025-2026 陕西企来客科技有限公司 版权所有 &nbsp;|&nbsp; 统一社会信用代码：91610112MAK8GFGY9W &nbsp;|&nbsp; <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">陕ICP备2026005808号</a></p></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://aiassist.loveperson.cn/widget.js" data-website-key="df30fbe5-4e0a-4350-9b0f-2dfbb020a111"></script>
+<!-- analytics:start -->
+<script>var _hmt=_hmt||[];(function(){var hm=document.createElement('script');hm.src='https://hm.baidu.com/hm.js?390fc64bc7b1cd71585b35621eea5d9e';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm,s);})();</script>
+<!-- analytics:end -->
+</body>
+</html>

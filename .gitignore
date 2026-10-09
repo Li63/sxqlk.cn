@@ -1,0 +1,27 @@
+# 大体积未引用资源（部署排除项）
+assets/
+
+# WorkBuddy 工作数据与本地记忆
+.workbuddy/
+
+# 日志与临时脚本
+_httpd*.log
+_httpd*.log.*
+*.py
+
+# 部署包与压缩文件
+*.zip
+
+# 上传残留备份（_1 后缀）
+*_1.html
+*_1.md
+*_1.txt
+*_1.coze
+*_1.gitignore
+
+# 旧分站备份
+subsites.bak/
+
+# 系统文件
+Thumbs.db
+Desktop.ini

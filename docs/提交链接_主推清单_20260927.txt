@@ -1,0 +1,50 @@
+================================================================
+企来客官网 www.sxqlk.cn  主推提交清单（2026-09-27）
+================================================================
+说明：以下链接均已核实存在于 sitemap.xml（共 745 条），不会提交 404。
+建议顺序：先提交 P0（本次新增/变更），再按需提交 P1。
+
+----------------------------------------------------------------
+P0  本次新增 / 变更，必推（3 条）
+----------------------------------------------------------------
+https://www.sxqlk.cn/news/112.html   ← 新增：NAP信息统一治理（GEO科普·干货指南）
+https://www.sxqlk.cn/news/111.html   ← 新增：GEO优化是什么（GEO方法论）
+https://www.sxqlk.cn/news.html       ← 变更：列表页新增 2 张卡片 + ItemList + 计数
+
+----------------------------------------------------------------
+P1  核心落地页，建议随附推送（12 条，可选）
+----------------------------------------------------------------
+https://www.sxqlk.cn/
+https://www.sxqlk.cn/about.html
+https://www.sxqlk.cn/about-info.html
+https://www.sxqlk.cn/whitepaper.html
+https://www.sxqlk.cn/qualifications.html
+https://www.sxqlk.cn/cases.html
+https://www.sxqlk.cn/cases/leawod-ai-agent.html
+https://www.sxqlk.cn/poi.html
+https://www.sxqlk.cn/faq-geo.html
+https://www.sxqlk.cn/sources.html
+https://www.sxqlk.cn/contact.html
+https://www.sxqlk.cn/news/110.html
+
+----------------------------------------------------------------
+提交入口与方式
+----------------------------------------------------------------
+【百度 · 普通收录】
+1. 百度搜索资源平台 → 链接提交 → 自动提交 → 主动推送
+   （node baidu-push.js 在本环境两次返回 error 505，若服务器可直连可重试；
+     或在服务器执行：node baidu-push.js）
+2. 或走「sitemap」入口重新提交 https://www.sxqlk.cn/sitemap.xml
+
+【头条 / 豆包 · 单独站点】
+- 头条搜索资源平台 → 提交 sitemap：https://www.sxqlk.cn/sitemap-toutiao.xml（现 90 条）
+  注意：该 sitemap 不写入 robots.txt（避免覆盖大模型爬虫可见的主 sitemap）
+- 建议同时单独提交 P0 的 3 条
+
+【大模型 / AI 收录（无需逐条提交）】
+- 保证 robots.txt 放行 GPTBot / ClaudeBot / CCBot / Google-Extended / Bytespider
+- 靠 robots.txt → sitemap.xml → llms.txt / ai.txt 自动发现
+
+【已知不建议提交】
+- https://www.sxqlk.cn/cities.html  未在 sitemap.xml 中，先确认是否需收录再推
+- subsites 二级域名分站（*.sxqlk.cn）不在主 sitemap，走分站各自 sitemap

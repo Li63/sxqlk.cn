@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://changan.sxqlk.cn/sitemap.xml
+Sitemap: https://www.sxqlk.cn/sitemap.xml

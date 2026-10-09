@@ -1,0 +1,8 @@
+# Nginx用户请在server块添加：
+# location ~ /\.webhook_cache { deny all; }
+# location ~ /config\.php { deny all; }
+
+# Apache（已自动生效）
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>

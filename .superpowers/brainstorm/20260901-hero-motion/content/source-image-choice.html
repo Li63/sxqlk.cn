@@ -1,0 +1,41 @@
+<style>
+  #source-choice .cards { align-items: stretch; }
+  #source-choice .card { overflow: hidden; }
+  #source-choice .card-image { aspect-ratio: 16 / 9; position: relative; overflow: hidden; background: var(--muted); }
+  #source-choice .card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #source-choice .current { position: absolute; left: 12px; top: 12px; padding: 5px 9px; border-radius: 999px; color: #fff; background: rgba(26,86,219,.88); font-size: 12px; font-weight: 600; backdrop-filter: blur(8px); }
+  #source-choice .sample-copy { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; padding: 18px; background: linear-gradient(90deg, rgba(255,255,255,.66), rgba(255,255,255,.18)); }
+  #source-choice .sample-copy strong { color: #0f172a; font-size: clamp(15px, 2.2vw, 24px); text-shadow: 0 1px 8px rgba(255,255,255,.9); }
+  #source-choice .sample-copy span { margin-top: 6px; color: #1a56db; font-size: 12px; font-weight: 700; }
+  @media (max-width: 640px) { #source-choice .cards { grid-template-columns: 1fr; } }
+</style>
+
+<div id="source-choice">
+  <h2>你说的“这张图”是哪一张？</h2>
+  <p class="subtitle">项目里有两张首页候选图，请点选你希望制作成 3–7 秒动态图的原图。</p>
+
+  <div class="cards">
+    <div class="card" data-choice="cbd" onclick="toggleSelect(this)">
+      <div class="card-image">
+        <img src="hero-bg-cbd.jpeg" alt="金色夕阳下的城市CBD天际线">
+        <span class="current">当前首页正在使用</span>
+        <div class="sample-copy"><strong>让品牌被 AI 优先推荐</strong><span>商务 · 明亮 · 可信</span></div>
+      </div>
+      <div class="card-body">
+        <h3>A · 金色 CBD 城市图</h3>
+        <p>适合企业官网，真实、稳重，便于叠加标题与咨询按钮。</p>
+      </div>
+    </div>
+
+    <div class="card" data-choice="ai-city" onclick="toggleSelect(this)">
+      <div class="card-image">
+        <img src="hero-bg.jpeg" alt="蓝色AI数据网络覆盖城市的科技场景">
+        <div class="sample-copy" style="background:linear-gradient(90deg,rgba(2,12,27,.72),rgba(2,12,27,.16));"><strong style="color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.75);">让品牌被 AI 优先推荐</strong><span style="color:#67e8f9;">智能体 · 数据网络 · GEO</span></div>
+      </div>
+      <div class="card-body">
+        <h3>B · 蓝色 AI 数据城市图</h3>
+        <p>科技感更强，更直接表达 AI 智能体、GEO 与信息网络。</p>
+      </div>
+    </div>
+  </div>
+</div>

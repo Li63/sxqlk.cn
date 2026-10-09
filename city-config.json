@@ -1,0 +1,3432 @@
+{
+  "meta": {
+    "company": "陕西企来客科技有限公司",
+    "creditCode": "91610112MAK8GFGY9W",
+    "phone": "400-805-2163",
+    "email": "1162304119@qq.com",
+    "address": "陕西省西咸新区沣东新城规划红光大道以南协同创新港银河A座6层646室",
+    "mainDomain": "www.sxqlk.cn",
+    "founded": "2026年3月16日",
+    "capital": "1000万元人民币"
+  },
+  "cities": {
+    "xian": {
+      "name": "西安",
+      "fullName": "西安市",
+      "pinyin": "xian",
+      "level": "provincial_capital",
+      "province": "陕西",
+      "region": "西北",
+      "title": "西安GEO优化公司_西安企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司西安GEO信息优化服务，专注西安企业AI搜索信息优化，自研四级可信信息佐证体系，覆盖雁塔、未央、高新、曲江等全域，西安本地可预约上门。",
+      "keywords": "陕西企来客科技有限公司,西安GEO优化,西安AI获客,西安企业AI搜索优化,西安GEO信息优化公司",
+      "h1": "西安GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "雁塔区",
+        "未央区",
+        "碑林区",
+        "莲湖区",
+        "新城区",
+        "灞桥区",
+        "长安区",
+        "鄠邑区",
+        "高陵区",
+        "阎良区",
+        "临潼区"
+      ],
+      "newDistricts": [
+        "高新区",
+        "曲江新区",
+        "浐灞生态区",
+        "沣东新城",
+        "经开区",
+        "港务区",
+        "航天基地",
+        "樊川新城"
+      ],
+      "counties": [
+        "周至县",
+        "蓝田县"
+      ],
+      "landmarks": [
+        "大雁塔",
+        "钟楼",
+        "小寨",
+        "高新软件园",
+        "曲江创客大街",
+        "浐灞商务区",
+        "经开区政务中心",
+        "港务区集装箱中心"
+      ],
+      "serviceType": "local_resident",
+      "parentCity": null,
+      "nearbyCities": [
+        "咸阳",
+        "渭南",
+        "宝鸡",
+        "铜川"
+      ],
+      "industries": [
+        "本地生活",
+        "工业制造",
+        "医疗健康",
+        "教育培训",
+        "政企招投标"
+      ],
+      "hasOnsite": true
+    },
+    "yanta": {
+      "name": "雁塔",
+      "fullName": "西安市雁塔区",
+      "pinyin": "yanta",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "雁塔区GEO优化_雁塔企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司雁塔区GEO信息优化服务，覆盖小寨、大雁塔、电子城、丈八路等商圈，四级可信信息佐证体系，西安本地可预约上门。",
+      "keywords": "陕西企来客科技有限公司,雁塔区GEO优化,雁塔区AI获客,雁塔企业AI搜索优化,小寨GEO优化",
+      "h1": "雁塔区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "小寨",
+        "大雁塔",
+        "电子城",
+        "丈八路",
+        "长安南路",
+        "科技路",
+        "含光路",
+        "朱雀路"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "大雁塔",
+        "陕西历史博物馆",
+        "大唐芙蓉园",
+        "小寨赛格",
+        "电子城"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "长安",
+        "碑林",
+        "高新",
+        "曲江"
+      ],
+      "industries": [
+        "本地生活",
+        "教育培训",
+        "医疗健康"
+      ],
+      "hasOnsite": true
+    },
+    "weiyang": {
+      "name": "未央",
+      "fullName": "西安市未央区",
+      "pinyin": "weiyang",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "未央区GEO优化_未央企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司未央区GEO信息优化服务，覆盖经开区、龙首原、大明宫、北客站等商圈，四级可信信息佐证体系，西安本地可预约上门。",
+      "keywords": "陕西企来客科技有限公司,未央区GEO优化,未央区AI获客,未央企业AI搜索优化,经开区GEO优化",
+      "h1": "未央区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "经开区",
+        "龙首原",
+        "大明宫",
+        "北客站",
+        "凤城一路",
+        "凤城五路",
+        "张家堡",
+        "徐家湾"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "大明宫遗址",
+        "北客站",
+        "城市运动公园",
+        "凤城五路"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "雁塔",
+        "新城",
+        "灞桥",
+        "高陵"
+      ],
+      "industries": [
+        "工业制造",
+        "政企招投标",
+        "本地生活"
+      ],
+      "hasOnsite": true
+    },
+    "gaoxin": {
+      "name": "高新",
+      "fullName": "西安高新区",
+      "pinyin": "gaoxin",
+      "level": "new_district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "高新区GEO优化_高新企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司高新区GEO信息优化服务，覆盖软件园、锦业路、科技路、唐延路等科技商圈，四级可信信息佐证体系，西安本地可预约上门。",
+      "keywords": "陕西企来客科技有限公司,高新区GEO优化,高新区AI获客,高新企业AI搜索优化,软件园GEO优化",
+      "h1": "高新区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "软件园",
+        "锦业路",
+        "科技路",
+        "唐延路",
+        "丈八北路",
+        "高新路",
+        "光德路",
+        "沣惠路"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "软件园",
+        "锦业路CBD",
+        "创业咖啡街区",
+        "高新万达"
+      ],
+      "serviceType": "new_district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "雁塔",
+        "长安",
+        "沣东"
+      ],
+      "industries": [
+        "工业制造",
+        "教育培训",
+        "商务咨询"
+      ],
+      "hasOnsite": true
+    },
+    "qujiang": {
+      "name": "曲江",
+      "fullName": "西安曲江新区",
+      "pinyin": "qujiang",
+      "level": "new_district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "曲江新区GEO优化_曲江企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司曲江新区GEO信息优化服务，覆盖大雁塔、曲江池、雁翔路、金滹沱等文旅商圈，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,曲江新区GEO优化,曲江AI获客,曲江企业AI搜索优化,大雁塔GEO优化",
+      "h1": "曲江新区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "大雁塔",
+        "曲江池",
+        "雁翔路",
+        "金滹沱",
+        "春临路",
+        "芙蓉东路",
+        "南三环",
+        "曲江大道"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "大雁塔",
+        "大唐芙蓉园",
+        "曲江池遗址公园",
+        "曲江创客大街"
+      ],
+      "serviceType": "new_district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "雁塔",
+        "浐灞",
+        "长安"
+      ],
+      "industries": [
+        "文旅行业",
+        "本地生活",
+        "教育培训"
+      ],
+      "hasOnsite": true
+    },
+    "beilin": {
+      "name": "碑林",
+      "fullName": "西安市碑林区",
+      "pinyin": "beilin",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "碑林区GEO优化_碑林企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司碑林区GEO信息优化服务，覆盖南门、东大街、柏树林、文艺路等核心商圈，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,碑林区GEO优化,碑林区AI获客,碑林企业AI搜索优化",
+      "h1": "碑林区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "南门",
+        "东大街",
+        "柏树林",
+        "文艺路",
+        "长安路",
+        "和平路",
+        "太乙路",
+        "友谊路"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "碑林博物馆",
+        "城墙南门",
+        "书院门",
+        "湘子庙街"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "雁塔",
+        "新城",
+        "莲湖"
+      ],
+      "industries": [
+        "本地生活",
+        "教育培训",
+        "商务咨询"
+      ],
+      "hasOnsite": true
+    },
+    "lianhu": {
+      "name": "莲湖",
+      "fullName": "西安市莲湖区",
+      "pinyin": "lianhu",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "莲湖区GEO优化_莲湖企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司莲湖区GEO信息优化服务，覆盖北大街、西大街、土门、大兴新区等商圈，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,莲湖区GEO优化,莲湖区AI获客,莲湖企业AI搜索优化",
+      "h1": "莲湖区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "北大街",
+        "西大街",
+        "土门",
+        "大兴新区",
+        "红庙坡",
+        "丰庆路",
+        "劳动路",
+        "桃园路"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "钟楼",
+        "回民街",
+        "广仁寺",
+        "大兴善寺"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "碑林",
+        "未央",
+        "新城"
+      ],
+      "industries": [
+        "本地生活",
+        "餐饮服务",
+        "连锁门店"
+      ],
+      "hasOnsite": true
+    },
+    "changan": {
+      "name": "长安",
+      "fullName": "西安市长安区",
+      "pinyin": "changan",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "长安区GEO优化_长安企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司长安区GEO信息优化服务，覆盖韦曲、郭杜、大学城、常宁新区等商圈，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,长安区GEO优化,长安区AI获客,长安企业AI搜索优化",
+      "h1": "长安区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "韦曲",
+        "郭杜",
+        "大学城",
+        "常宁新区",
+        "子午",
+        "太乙",
+        "王曲",
+        "引镇"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "翠华山",
+        "南五台",
+        "长安公园",
+        "西安外国语大学"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "雁塔",
+        "高新",
+        "鄠邑"
+      ],
+      "industries": [
+        "教育培训",
+        "本地生活",
+        "建筑工程"
+      ],
+      "hasOnsite": true
+    },
+    "chanba": {
+      "name": "浐灞",
+      "fullName": "西安浐灞生态区",
+      "pinyin": "chanba",
+      "level": "new_district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "浐灞生态区GEO优化_浐灞企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司浐灞生态区GEO信息优化服务，覆盖世博园、金融园区、桃花潭、广运潭等商圈，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,浐灞GEO优化,浐灞AI获客,浐灞企业AI搜索优化",
+      "h1": "浐灞生态区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "世博园",
+        "金融园区",
+        "桃花潭",
+        "广运潭",
+        "辛家庙",
+        "御锦城",
+        "灞柳路",
+        "东三环"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "世博园",
+        "浐灞湿地公园",
+        "长安塔",
+        "宋城演艺"
+      ],
+      "serviceType": "new_district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "未央",
+        "灞桥",
+        "曲江"
+      ],
+      "industries": [
+        "文旅行业",
+        "本地生活",
+        "连锁门店"
+      ],
+      "hasOnsite": true
+    },
+    "xianyang": {
+      "name": "咸阳",
+      "fullName": "咸阳市",
+      "pinyin": "xianyang",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "咸阳GEO优化公司_咸阳企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司咸阳GEO信息优化服务，覆盖秦都区、渭城区、兴平、三原等全域，四级可信信息佐证体系，线上对接+可预约上门。",
+      "keywords": "陕西企来客科技有限公司,咸阳GEO优化,咸阳AI获客,咸阳企业AI搜索优化,咸阳GEO信息优化公司",
+      "h1": "咸阳GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "秦都区",
+        "渭城区",
+        "兴平市",
+        "三原县",
+        "泾阳县",
+        "乾县",
+        "礼泉县",
+        "武功县"
+      ],
+      "newDistricts": [],
+      "counties": [
+        "永寿县",
+        "长武县",
+        "旬邑县",
+        "淳化县",
+        "彬州市"
+      ],
+      "landmarks": [
+        "咸阳湖",
+        "统一广场",
+        "渭城老街",
+        "茂陵"
+      ],
+      "serviceType": "nearby",
+      "parentCity": null,
+      "nearbyCities": [
+        "西安",
+        "渭南",
+        "宝鸡"
+      ],
+      "industries": [
+        "工业制造",
+        "本地生活",
+        "建筑工程"
+      ],
+      "hasOnsite": false
+    },
+    "baoji": {
+      "name": "宝鸡",
+      "fullName": "宝鸡市",
+      "pinyin": "baoji",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "宝鸡GEO优化公司_宝鸡企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司宝鸡GEO信息优化服务，覆盖金台区、渭滨区、陈仓区、凤翔等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,宝鸡GEO优化,宝鸡AI获客,宝鸡企业AI搜索优化,宝鸡GEO信息优化公司",
+      "h1": "宝鸡GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "金台区",
+        "渭滨区",
+        "陈仓区",
+        "凤翔区",
+        "岐山县",
+        "扶风县",
+        "眉县",
+        "陇县"
+      ],
+      "newDistricts": [],
+      "counties": [
+        "千阳县",
+        "麟游县",
+        "凤县",
+        "太白县"
+      ],
+      "landmarks": [
+        "青铜器博物馆",
+        "法门寺",
+        "太白山",
+        "关山草原"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "咸阳",
+        "西安",
+        "汉中"
+      ],
+      "industries": [
+        "工业制造",
+        "文旅行业",
+        "医疗健康"
+      ],
+      "hasOnsite": false
+    },
+    "weinan": {
+      "name": "渭南",
+      "fullName": "渭南市",
+      "pinyin": "weinan",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "渭南GEO优化公司_渭南企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司渭南GEO信息优化服务，覆盖临渭区、华州区、富平、蒲城等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,渭南GEO优化,渭南AI获客,渭南企业AI搜索优化,渭南GEO信息优化公司",
+      "h1": "渭南GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "临渭区",
+        "华州区",
+        "华阴市",
+        "潼关县",
+        "大荔县",
+        "蒲城县",
+        "澄城县",
+        "富平县"
+      ],
+      "newDistricts": [],
+      "counties": [
+        "白水县",
+        "合阳县",
+        "韩城市"
+      ],
+      "landmarks": [
+        "华山",
+        "渭华起义纪念馆",
+        "少华山",
+        "洽川湿地"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "西安",
+        "咸阳",
+        "商洛"
+      ],
+      "industries": [
+        "文旅行业",
+        "工业制造",
+        "农业"
+      ],
+      "hasOnsite": false
+    },
+    "tongchuan": {
+      "name": "铜川",
+      "fullName": "铜川市",
+      "pinyin": "tongchuan",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "铜川GEO优化_铜川企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司铜川GEO信息优化服务，覆盖王益区、印台区、耀州区、宜君县，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,铜川GEO优化,铜川AI获客,铜川企业AI搜索优化",
+      "h1": "铜川GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "王益区",
+        "印台区",
+        "耀州区",
+        "宜君县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "耀州窑",
+        "药王山",
+        "玉华宫",
+        "陈炉古镇"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "咸阳",
+        "渭南",
+        "延安"
+      ],
+      "industries": [
+        "工业制造",
+        "文旅行业"
+      ],
+      "hasOnsite": false
+    },
+    "yanan": {
+      "name": "延安",
+      "fullName": "延安市",
+      "pinyin": "yanan",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "延安GEO优化公司_延安企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司延安GEO信息优化服务，覆盖宝塔区、安塞区、志丹、吴起等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,延安GEO优化,延安AI获客,延安企业AI搜索优化,延安GEO信息优化公司",
+      "h1": "延安GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "宝塔区",
+        "安塞区",
+        "延长县",
+        "延川县",
+        "志丹县",
+        "吴起县",
+        "甘泉县",
+        "富县"
+      ],
+      "newDistricts": [],
+      "counties": [
+        "洛川县",
+        "宜川县",
+        "黄龙县",
+        "黄陵县",
+        "子长市"
+      ],
+      "landmarks": [
+        "宝塔山",
+        "枣园",
+        "杨家岭",
+        "壶口瀑布"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "铜川",
+        "榆林",
+        "咸阳"
+      ],
+      "industries": [
+        "文旅行业",
+        "政企招投标",
+        "工业制造"
+      ],
+      "hasOnsite": false
+    },
+    "yulin": {
+      "name": "榆林",
+      "fullName": "榆林市",
+      "pinyin": "yulin",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "榆林GEO优化公司_榆林企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司榆林GEO信息优化服务，覆盖榆阳区、横山区、神木、府谷等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,榆林GEO优化,榆林AI获客,榆林企业AI搜索优化,榆林GEO信息优化公司",
+      "h1": "榆林GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "榆阳区",
+        "横山区",
+        "神木市",
+        "府谷县",
+        "靖边县",
+        "定边县",
+        "绥德县",
+        "米脂县"
+      ],
+      "newDistricts": [],
+      "counties": [
+        "佳县",
+        "吴堡县",
+        "清涧县",
+        "子洲县"
+      ],
+      "landmarks": [
+        "镇北台",
+        "红石峡",
+        "白云山",
+        "统万城"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "延安",
+        "铜川"
+      ],
+      "industries": [
+        "工业制造",
+        "政企招投标",
+        "安防设备"
+      ],
+      "hasOnsite": false
+    },
+    "hanzhong": {
+      "name": "汉中",
+      "fullName": "汉中市",
+      "pinyin": "hanzhong",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "汉中GEO优化公司_汉中企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司汉中GEO信息优化服务，覆盖汉台区、南郑区、城固、洋县等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,汉中GEO优化,汉中AI获客,汉中企业AI搜索优化,汉中GEO信息优化公司",
+      "h1": "汉中GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "汉台区",
+        "南郑区",
+        "城固县",
+        "洋县",
+        "西乡县",
+        "勉县",
+        "宁强县",
+        "略阳县"
+      ],
+      "newDistricts": [],
+      "counties": [
+        "镇巴县",
+        "留坝县",
+        "佛坪县"
+      ],
+      "landmarks": [
+        "汉中古城",
+        "拜将坛",
+        "武侯墓",
+        "黎坪森林公园"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "宝鸡",
+        "安康"
+      ],
+      "industries": [
+        "文旅行业",
+        "工业制造",
+        "农业"
+      ],
+      "hasOnsite": false
+    },
+    "ankang": {
+      "name": "安康",
+      "fullName": "安康市",
+      "pinyin": "ankang",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "安康GEO优化_安康企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司安康GEO信息优化服务，覆盖汉滨区、旬阳、汉阴等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,安康GEO优化,安康AI获客,安康企业AI搜索优化",
+      "h1": "安康GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "汉滨区",
+        "旬阳市",
+        "汉阴县",
+        "石泉县",
+        "宁陕县",
+        "紫阳县",
+        "岚皋县",
+        "平利县"
+      ],
+      "newDistricts": [],
+      "counties": [
+        "镇坪县",
+        "白河县"
+      ],
+      "landmarks": [
+        "瀛湖",
+        "南宫山",
+        "香溪洞",
+        "中坝大峡谷"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "汉中",
+        "商洛"
+      ],
+      "industries": [
+        "文旅行业",
+        "本地生活",
+        "医疗健康"
+      ],
+      "hasOnsite": false
+    },
+    "shangluo": {
+      "name": "商洛",
+      "fullName": "商洛市",
+      "pinyin": "shangluo",
+      "level": "prefecture",
+      "province": "陕西",
+      "region": "西北",
+      "title": "商洛GEO优化_商洛企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司商洛GEO信息优化服务，覆盖商州区、洛南、丹凤等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,商洛GEO优化,商洛AI获客,商洛企业AI搜索优化",
+      "h1": "商洛GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "商州区",
+        "洛南县",
+        "丹凤县",
+        "商南县",
+        "山阳县",
+        "镇安县",
+        "柞水县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "金丝峡",
+        "牛背梁",
+        "棣花古镇",
+        "天竺山"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "渭南",
+        "安康"
+      ],
+      "industries": [
+        "文旅行业",
+        "农业",
+        "本地生活"
+      ],
+      "hasOnsite": false
+    },
+    "lantian": {
+      "name": "蓝田",
+      "fullName": "西安市蓝田县",
+      "pinyin": "lantian",
+      "level": "county",
+      "province": "陕西",
+      "region": "西北",
+      "title": "蓝田GEO优化_蓝田企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司蓝田县GEO信息优化服务，覆盖蓝关街道、洩湖、汤峪等区域，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,蓝田GEO优化,蓝田AI获客,蓝田企业AI搜索优化",
+      "h1": "蓝田GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "蓝关街道",
+        "洩湖镇",
+        "汤峪镇",
+        "焦岱镇",
+        "玉山镇",
+        "前卫镇",
+        "三里镇",
+        "普化镇"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "蓝田猿人遗址",
+        "水陆庵",
+        "汤峪温泉",
+        "王顺山"
+      ],
+      "serviceType": "county",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "长安",
+        "灞桥",
+        "渭南"
+      ],
+      "industries": [
+        "文旅行业",
+        "本地生活",
+        "农业"
+      ],
+      "hasOnsite": false
+    },
+    "huyi": {
+      "name": "鄠邑",
+      "fullName": "西安市鄠邑区",
+      "pinyin": "huyi",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "鄠邑区GEO优化_鄠邑企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司鄠邑区GEO信息优化服务，覆盖甘亭、余下、草堂等区域，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,鄠邑区GEO优化,鄠邑区AI获客,鄠邑企业AI搜索优化",
+      "h1": "鄠邑区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "甘亭街道",
+        "余下镇",
+        "草堂镇",
+        "庞光镇",
+        "秦渡镇",
+        "涝店镇",
+        "甘河镇",
+        "玉蝉街道"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "草堂寺",
+        "朱雀森林公园",
+        "太平森林公园",
+        "渼陂湖"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "长安",
+        "高新",
+        "周至"
+      ],
+      "industries": [
+        "文旅行业",
+        "工业制造",
+        "农业"
+      ],
+      "hasOnsite": false
+    },
+    "lintong": {
+      "name": "临潼",
+      "fullName": "西安市临潼区",
+      "pinyin": "lintong",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "临潼区GEO优化_临潼企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司临潼区GEO信息优化服务，覆盖骊山、新丰、代王等区域，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,临潼区GEO优化,临潼区AI获客,临潼企业AI搜索优化",
+      "h1": "临潼区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "骊山街道",
+        "新丰街道",
+        "代王街道",
+        "斜口街道",
+        "行者街道",
+        "零口街道",
+        "相桥街道",
+        "雨金街道"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "兵马俑",
+        "华清池",
+        "骊山",
+        "秦始皇陵"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "灞桥",
+        "渭南",
+        "阎良"
+      ],
+      "industries": [
+        "文旅行业",
+        "本地生活",
+        "餐饮服务"
+      ],
+      "hasOnsite": false
+    },
+    "zhouzhi": {
+      "name": "周至",
+      "fullName": "西安市周至县",
+      "pinyin": "zhouzhi",
+      "level": "county",
+      "province": "陕西",
+      "region": "西北",
+      "title": "周至GEO优化_周至企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司周至县GEO信息优化服务，覆盖二曲、哑柏、楼观等区域，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,周至GEO优化,周至AI获客,周至企业AI搜索优化",
+      "h1": "周至GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "二曲街道",
+        "哑柏镇",
+        "楼观镇",
+        "尚村镇",
+        "马召镇",
+        "广济镇",
+        "集贤镇",
+        "九峰镇"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "楼观台",
+        "仙游寺",
+        "沙河湿地公园",
+        "黑河森林公园"
+      ],
+      "serviceType": "county",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "鄠邑",
+        "宝鸡"
+      ],
+      "industries": [
+        "文旅行业",
+        "农业",
+        "本地生活"
+      ],
+      "hasOnsite": false
+    },
+    "fengdong": {
+      "name": "沣东",
+      "fullName": "西安沣东新城",
+      "pinyin": "fengdong",
+      "level": "new_district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "沣东新城GEO优化_沣东企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司沣东新城GEO信息优化服务，总部所在地，覆盖协同创新港、昆明池、三桥等商圈，四级可信信息佐证体系，西安本地可预约上门。",
+      "keywords": "陕西企来客科技有限公司,沣东新城GEO优化,沣东AI获客,沣东企业AI搜索优化,协同创新港GEO优化",
+      "h1": "沣东新城GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "协同创新港",
+        "昆明池",
+        "三桥",
+        "阿房宫",
+        "和平村",
+        "王寺",
+        "斗门",
+        "后围寨"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "昆明池",
+        "协同创新港",
+        "阿房宫遗址",
+        "沣东农博园"
+      ],
+      "serviceType": "new_district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "未央",
+        "高新",
+        "长安"
+      ],
+      "industries": [
+        "工业制造",
+        "科技研发",
+        "政企招投标"
+      ],
+      "hasOnsite": true
+    },
+    "xincheng": {
+      "name": "新城",
+      "fullName": "西安市新城区",
+      "pinyin": "xincheng",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "新城区GEO优化_新城企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司新城区GEO信息优化服务，覆盖解放路、长乐路、胡家庙等商圈，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,新城区GEO优化,新城区AI获客,新城企业AI搜索优化",
+      "h1": "新城区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "解放路",
+        "长乐路",
+        "胡家庙",
+        "韩森寨",
+        "金花路",
+        "万年路",
+        "西一路",
+        "东新街"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "革命公园",
+        "新城广场",
+        "永兴坊",
+        "火车站"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "碑林",
+        "未央",
+        "莲湖"
+      ],
+      "industries": [
+        "本地生活",
+        "商务咨询",
+        "医疗健康"
+      ],
+      "hasOnsite": true
+    },
+    "baqiao": {
+      "name": "灞桥",
+      "fullName": "西安市灞桥区",
+      "pinyin": "baqiao",
+      "level": "district",
+      "province": "陕西",
+      "region": "西北",
+      "title": "灞桥区GEO优化_灞桥企业AI搜索优化_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司灞桥区GEO信息优化服务，覆盖纺织城、灞柳、洪庆等商圈，四级可信信息佐证体系。",
+      "keywords": "陕西企来客科技有限公司,灞桥区GEO优化,灞桥区AI获客,灞桥企业AI搜索优化",
+      "h1": "灞桥区GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "纺织城",
+        "灞柳",
+        "洪庆",
+        "席王",
+        "十里铺",
+        "新筑",
+        "红旗",
+        "狄寨"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "灞桥遗址",
+        "半坡遗址",
+        "白鹿原",
+        "纺织城艺术区"
+      ],
+      "serviceType": "district",
+      "parentCity": "xian",
+      "nearbyCities": [
+        "浐灞",
+        "未央",
+        "临潼"
+      ],
+      "industries": [
+        "工业制造",
+        "本地生活",
+        "建筑工程"
+      ],
+      "hasOnsite": true
+    },
+    "lanzhou": {
+      "name": "兰州",
+      "fullName": "兰州市",
+      "pinyin": "lanzhou",
+      "level": "provincial_capital",
+      "province": "甘肃",
+      "region": "西北",
+      "title": "兰州GEO优化公司_兰州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司兰州GEO信息优化服务，覆盖城关区、七里河区、安宁区、西固区等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,兰州GEO优化,兰州AI获客,兰州企业AI搜索优化,兰州GEO信息优化公司",
+      "h1": "兰州GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "城关区",
+        "七里河区",
+        "安宁区",
+        "西固区",
+        "红古区",
+        "榆中县",
+        "皋兰县",
+        "永登县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "黄河铁桥",
+        "白塔山",
+        "五泉山",
+        "兰州新区"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "西宁",
+        "武威",
+        "定西"
+      ],
+      "industries": [
+        "工业制造",
+        "政企招投标",
+        "本地生活"
+      ],
+      "hasOnsite": false
+    },
+    "tianshui": {
+      "name": "天水",
+      "fullName": "天水市",
+      "pinyin": "tianshui",
+      "level": "prefecture",
+      "province": "甘肃",
+      "region": "西北",
+      "title": "天水GEO优化_天水企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司天水GEO信息优化服务，覆盖秦州区、麦积区等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,天水GEO优化,天水AI获客,天水企业AI搜索优化",
+      "h1": "天水GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "秦州区",
+        "麦积区",
+        "武山县",
+        "甘谷县",
+        "秦安县",
+        "清水县",
+        "张家川县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "麦积山",
+        "伏羲庙",
+        "南郭寺",
+        "玉泉观"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "兰州",
+        "宝鸡",
+        "定西"
+      ],
+      "industries": [
+        "文旅行业",
+        "工业制造",
+        "农业"
+      ],
+      "hasOnsite": false
+    },
+    "wuwei": {
+      "name": "武威",
+      "fullName": "武威市",
+      "pinyin": "wuwei",
+      "level": "prefecture",
+      "province": "甘肃",
+      "region": "西北",
+      "title": "武威GEO优化_武威企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司武威GEO信息优化服务，覆盖凉州区、民勤县、古浪县、天祝县，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,武威GEO优化,武威AI获客,武威企业AI搜索优化",
+      "h1": "武威GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "凉州区",
+        "民勤县",
+        "古浪县",
+        "天祝县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "雷台汉墓",
+        "文庙",
+        "沙漠公园",
+        "白塔寺"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "兰州",
+        "金昌",
+        "张掖"
+      ],
+      "industries": [
+        "文旅行业",
+        "农业",
+        "工业制造"
+      ],
+      "hasOnsite": false
+    },
+    "jiuquan": {
+      "name": "酒泉",
+      "fullName": "酒泉市",
+      "pinyin": "jiuquan",
+      "level": "prefecture",
+      "province": "甘肃",
+      "region": "西北",
+      "title": "酒泉GEO优化_酒泉企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司酒泉GEO信息优化服务，覆盖肃州区、敦煌、玉门等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,酒泉GEO优化,酒泉AI获客,酒泉企业AI搜索优化",
+      "h1": "酒泉GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "肃州区",
+        "敦煌市",
+        "玉门市",
+        "瓜州县",
+        "金塔县",
+        "肃北县",
+        "阿克塞县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "敦煌莫高窟",
+        "鸣沙山",
+        "嘉峪关",
+        "酒泉卫星发射中心"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "嘉峪关",
+        "张掖"
+      ],
+      "industries": [
+        "文旅行业",
+        "工业制造",
+        "政企招投标"
+      ],
+      "hasOnsite": false
+    },
+    "xining": {
+      "name": "西宁",
+      "fullName": "西宁市",
+      "pinyin": "xining",
+      "level": "provincial_capital",
+      "province": "青海",
+      "region": "西北",
+      "title": "西宁GEO优化公司_西宁企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司西宁GEO信息优化服务，覆盖城中区、城东区、城西区、城北区等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,西宁GEO优化,西宁AI获客,西宁企业AI搜索优化,西宁GEO信息优化公司",
+      "h1": "西宁GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "城中区",
+        "城东区",
+        "城西区",
+        "城北区",
+        "湟中区",
+        "大通县",
+        "湟源县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "塔尔寺",
+        "青海湖",
+        "东关清真大寺",
+        "南禅寺"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "兰州",
+        "海东"
+      ],
+      "industries": [
+        "文旅行业",
+        "本地生活",
+        "工业制造"
+      ],
+      "hasOnsite": false
+    },
+    "yinchuan": {
+      "name": "银川",
+      "fullName": "银川市",
+      "pinyin": "yinchuan",
+      "level": "provincial_capital",
+      "province": "宁夏",
+      "region": "西北",
+      "title": "银川GEO优化公司_银川企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司银川GEO信息优化服务，覆盖兴庆区、金凤区、西夏区、贺兰等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,银川GEO优化,银川AI获客,银川企业AI搜索优化,银川GEO信息优化公司",
+      "h1": "银川GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "兴庆区",
+        "金凤区",
+        "西夏区",
+        "贺兰县",
+        "永宁县",
+        "灵武市"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "西夏王陵",
+        "镇北堡影视城",
+        "沙湖",
+        "贺兰山"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "吴忠",
+        "石嘴山",
+        "兰州"
+      ],
+      "industries": [
+        "文旅行业",
+        "工业制造",
+        "政企招投标"
+      ],
+      "hasOnsite": false
+    },
+    "wulumuqi": {
+      "name": "乌鲁木齐",
+      "fullName": "乌鲁木齐市",
+      "pinyin": "wulumuqi",
+      "level": "provincial_capital",
+      "province": "新疆",
+      "region": "西北",
+      "title": "乌鲁木齐GEO优化公司_乌鲁木齐企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司乌鲁木齐GEO信息优化服务，覆盖天山区、沙依巴克区、新市区、水磨沟区等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,乌鲁木齐GEO优化,乌鲁木齐AI获客,乌鲁木齐企业AI搜索优化,乌鲁木齐GEO信息优化公司",
+      "h1": "乌鲁木齐GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "天山区",
+        "沙依巴克区",
+        "新市区",
+        "水磨沟区",
+        "头屯河区",
+        "达坂城区",
+        "米东区",
+        "乌鲁木齐县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "国际大巴扎",
+        "红山公园",
+        "天山天池",
+        "南山牧场"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "昌吉",
+        "吐鲁番"
+      ],
+      "industries": [
+        "工业制造",
+        "政企招投标",
+        "本地生活"
+      ],
+      "hasOnsite": false
+    },
+    "wuzhong": {
+      "name": "吴忠",
+      "fullName": "吴忠市",
+      "pinyin": "wuzhong",
+      "level": "prefecture",
+      "province": "宁夏",
+      "region": "西北",
+      "title": "吴忠GEO优化_吴忠企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司吴忠GEO信息优化服务，覆盖利通区、红寺堡区、盐池县等，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,吴忠GEO优化,吴忠AI获客,吴忠企业AI搜索优化",
+      "h1": "吴忠GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "利通区",
+        "红寺堡区",
+        "盐池县",
+        "同心县",
+        "青铜峡市"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "黄河楼",
+        "董府",
+        "一百零八塔",
+        "金沙湾"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "银川",
+        "中卫",
+        "固原"
+      ],
+      "industries": [
+        "农业",
+        "本地生活",
+        "文旅行业"
+      ],
+      "hasOnsite": false
+    },
+    "dingxi": {
+      "name": "定西",
+      "fullName": "定西市",
+      "pinyin": "dingxi",
+      "level": "prefecture",
+      "province": "甘肃",
+      "region": "西北",
+      "title": "定西GEO优化_定西企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司定西GEO信息优化服务，覆盖安定区、陇西、临洮等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,定西GEO优化,定西AI获客,定西企业AI搜索优化",
+      "h1": "定西GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "安定区",
+        "陇西县",
+        "临洮县",
+        "渭源县",
+        "漳县",
+        "岷县",
+        "通渭县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "贵清山",
+        "遮阳山",
+        "李家龙宫",
+        "威远楼"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "兰州",
+        "天水",
+        "平凉"
+      ],
+      "industries": [
+        "农业",
+        "本地生活",
+        "工业制造"
+      ],
+      "hasOnsite": false
+    },
+    "qingyang": {
+      "name": "庆阳",
+      "fullName": "庆阳市",
+      "pinyin": "qingyang",
+      "level": "prefecture",
+      "province": "甘肃",
+      "region": "西北",
+      "title": "庆阳GEO优化_庆阳企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司庆阳GEO信息优化服务，覆盖西峰区、环县、华池等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,庆阳GEO优化,庆阳AI获客,庆阳企业AI搜索优化",
+      "h1": "庆阳GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "西峰区",
+        "环县",
+        "华池县",
+        "合水县",
+        "正宁县",
+        "宁县",
+        "镇原县",
+        "庆城县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "南梁革命纪念馆",
+        "周祖陵",
+        "北石窟寺",
+        "董志塬"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "平凉",
+        "延安",
+        "咸阳"
+      ],
+      "industries": [
+        "农业",
+        "工业制造",
+        "政企招投标"
+      ],
+      "hasOnsite": false
+    },
+    "baiyin": {
+      "name": "白银",
+      "fullName": "白银市",
+      "pinyin": "baiyin",
+      "level": "prefecture",
+      "province": "甘肃",
+      "region": "西北",
+      "title": "白银GEO优化_白银企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司白银GEO信息优化服务，覆盖白银区、平川区、靖远等全域，四级可信信息佐证体系，线上对接。",
+      "keywords": "陕西企来客科技有限公司,白银GEO优化,白银AI获客,白银企业AI搜索优化",
+      "h1": "白银GEO优化_企业AI精准获客_陕西企来客科技有限公司",
+      "districts": [
+        "白银区",
+        "平川区",
+        "靖远县",
+        "会宁县",
+        "景泰县"
+      ],
+      "newDistricts": [],
+      "counties": [],
+      "landmarks": [
+        "黄河石林",
+        "红军会宁会师旧址",
+        "寿鹿山",
+        "大敦煌影视城"
+      ],
+      "serviceType": "remote",
+      "parentCity": null,
+      "nearbyCities": [
+        "兰州",
+        "武威",
+        "定西"
+      ],
+      "industries": [
+        "工业制造",
+        "农业",
+        "政企招投标"
+      ],
+      "hasOnsite": false
+    },
+    "chengdu": {
+      "name": "成都",
+      "fullName": "成都市",
+      "pinyin": "chengdu",
+      "level": "provincial_capital",
+      "province": "四川",
+      "region": "西南",
+      "districts": [
+        "锦江区",
+        "青羊区",
+        "金牛区",
+        "武侯区",
+        "成华区",
+        "龙泉驿区",
+        "新都区",
+        "温江区",
+        "双流区",
+        "郫都区"
+      ],
+      "newDistricts": [
+        "高新区",
+        "天府新区",
+        "东部新区",
+        "经开区"
+      ],
+      "landmarks": [
+        "春熙路",
+        "天府广场",
+        "高新区天府软件园",
+        "天府新区科创中心",
+        "宽窄巷子",
+        "锦里"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "重庆",
+        "绵阳",
+        "德阳"
+      ],
+      "industries": [
+        "互联网",
+        "软件服务",
+        "新消费",
+        "文旅"
+      ],
+      "descSuffix": "规划区域服务站点，推进场地选址与工商备案中",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "成都GEO优化_成都企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司成都GEO信息优化服务，专注成都企业AI搜索信息优化，自研四级可信信息佐证体系，规划区域服务站点，推进场地选址与工商备案中。",
+      "keywords": "陕西企来客科技有限公司,成都GEO优化,成都AI获客,成都企业AI搜索优化,成都GEO信息优化公司",
+      "h1": "成都GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "mianyang": {
+      "name": "绵阳",
+      "fullName": "绵阳市",
+      "pinyin": "mianyang",
+      "level": "prefecture",
+      "province": "四川",
+      "region": "西南",
+      "districts": [
+        "涪城区",
+        "游仙区",
+        "安州区"
+      ],
+      "landmarks": [
+        "绵阳科技城",
+        "涪城区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "成都",
+        "德阳"
+      ],
+      "industries": [
+        "科技",
+        "制造业"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "绵阳GEO优化_绵阳企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司绵阳GEO信息优化服务，专注绵阳企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,绵阳GEO优化,绵阳AI获客,绵阳企业AI搜索优化,绵阳GEO信息优化公司",
+      "h1": "绵阳GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "deyang": {
+      "name": "德阳",
+      "fullName": "德阳市",
+      "pinyin": "deyang",
+      "level": "prefecture",
+      "province": "四川",
+      "region": "西南",
+      "districts": [
+        "旌阳区",
+        "罗江区"
+      ],
+      "landmarks": [
+        "德阳经开区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "成都",
+        "绵阳"
+      ],
+      "industries": [
+        "装备制造",
+        "工业"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "德阳GEO优化_德阳企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司德阳GEO信息优化服务，专注德阳企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,德阳GEO优化,德阳AI获客,德阳企业AI搜索优化,德阳GEO信息优化公司",
+      "h1": "德阳GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "yibin": {
+      "name": "宜宾",
+      "fullName": "宜宾市",
+      "pinyin": "yibin",
+      "level": "prefecture",
+      "province": "四川",
+      "region": "西南",
+      "districts": [
+        "翠屏区",
+        "南溪区",
+        "叙州区"
+      ],
+      "landmarks": [
+        "宜宾五粮液产业园"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "成都",
+        "泸州"
+      ],
+      "industries": [
+        "白酒",
+        "新能源"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "宜宾GEO优化_宜宾企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司宜宾GEO信息优化服务，专注宜宾企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,宜宾GEO优化,宜宾AI获客,宜宾企业AI搜索优化,宜宾GEO信息优化公司",
+      "h1": "宜宾GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "chongqing": {
+      "name": "重庆",
+      "fullName": "重庆市",
+      "pinyin": "chongqing",
+      "level": "provincial_capital",
+      "province": "重庆",
+      "region": "西南",
+      "districts": [
+        "渝中区",
+        "江北区",
+        "南岸区",
+        "沙坪坝区",
+        "九龙坡区",
+        "大渡口区",
+        "渝北区",
+        "巴南区",
+        "北碚区"
+      ],
+      "newDistricts": [
+        "两江新区",
+        "高新区"
+      ],
+      "landmarks": [
+        "解放碑",
+        "观音桥",
+        "两江新区",
+        "重庆高新区",
+        "洪崖洞"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "成都",
+        "贵阳"
+      ],
+      "industries": [
+        "汽车",
+        "电子信息",
+        "金融"
+      ],
+      "descSuffix": "规划区域服务站点，推进场地选址与工商备案中",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "重庆GEO优化_重庆企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司重庆GEO信息优化服务，专注重庆企业AI搜索信息优化，自研四级可信信息佐证体系，规划区域服务站点，推进场地选址与工商备案中。",
+      "keywords": "陕西企来客科技有限公司,重庆GEO优化,重庆AI获客,重庆企业AI搜索优化,重庆GEO信息优化公司",
+      "h1": "重庆GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "shenyang": {
+      "name": "沈阳",
+      "fullName": "沈阳市",
+      "pinyin": "shenyang",
+      "level": "provincial_capital",
+      "province": "辽宁",
+      "region": "东北",
+      "districts": [
+        "和平区",
+        "沈河区",
+        "大东区",
+        "皇姑区",
+        "铁西区",
+        "苏家屯区",
+        "浑南区",
+        "沈北新区"
+      ],
+      "newDistricts": [
+        "浑南新区",
+        "沈抚改革创新示范区"
+      ],
+      "landmarks": [
+        "沈阳故宫",
+        "中街",
+        "浑南高新区",
+        "铁西装备制造园"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "大连",
+        "长春"
+      ],
+      "industries": [
+        "装备制造",
+        "汽车",
+        "航空航天"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "沈阳GEO优化_沈阳企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司沈阳GEO信息优化服务，专注沈阳企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,沈阳GEO优化,沈阳AI获客,沈阳企业AI搜索优化,沈阳GEO信息优化公司",
+      "h1": "沈阳GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "dalian": {
+      "name": "大连",
+      "fullName": "大连市",
+      "pinyin": "dalian",
+      "level": "prefecture",
+      "province": "辽宁",
+      "region": "东北",
+      "districts": [
+        "中山区",
+        "西岗区",
+        "沙河口区",
+        "甘井子区",
+        "金州区"
+      ],
+      "landmarks": [
+        "星海广场",
+        "大连软件园",
+        "高新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "沈阳",
+        "鞍山"
+      ],
+      "industries": [
+        "软件服务",
+        "石化",
+        "港口物流"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "大连GEO优化_大连企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司大连GEO信息优化服务，专注大连企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,大连GEO优化,大连AI获客,大连企业AI搜索优化,大连GEO信息优化公司",
+      "h1": "大连GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "anshan": {
+      "name": "鞍山",
+      "fullName": "鞍山市",
+      "pinyin": "anshan",
+      "level": "prefecture",
+      "province": "辽宁",
+      "region": "东北",
+      "districts": [
+        "铁东区",
+        "铁西区",
+        "立山区"
+      ],
+      "landmarks": [
+        "鞍钢"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "沈阳",
+        "大连"
+      ],
+      "industries": [
+        "钢铁",
+        "装备制造"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "鞍山GEO优化_鞍山企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司鞍山GEO信息优化服务，专注鞍山企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,鞍山GEO优化,鞍山AI获客,鞍山企业AI搜索优化,鞍山GEO信息优化公司",
+      "h1": "鞍山GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "changchun": {
+      "name": "长春",
+      "fullName": "长春市",
+      "pinyin": "changchun",
+      "level": "provincial_capital",
+      "province": "吉林",
+      "region": "东北",
+      "districts": [
+        "南关区",
+        "宽城区",
+        "朝阳区",
+        "二道区",
+        "绿园区",
+        "净月区"
+      ],
+      "landmarks": [
+        "长春新区",
+        "一汽集团",
+        "净月潭"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "沈阳",
+        "哈尔滨"
+      ],
+      "industries": [
+        "汽车",
+        "农产品加工",
+        "光电"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "长春GEO优化_长春企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司长春GEO信息优化服务，专注长春企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,长春GEO优化,长春AI获客,长春企业AI搜索优化,长春GEO信息优化公司",
+      "h1": "长春GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "haerbin": {
+      "name": "哈尔滨",
+      "fullName": "哈尔滨市",
+      "pinyin": "haerbin",
+      "level": "provincial_capital",
+      "province": "黑龙江",
+      "region": "东北",
+      "districts": [
+        "道里区",
+        "南岗区",
+        "道外区",
+        "平房区",
+        "松北区",
+        "香坊区"
+      ],
+      "landmarks": [
+        "中央大街",
+        "松北高新区",
+        "哈工大"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "长春",
+        "沈阳"
+      ],
+      "industries": [
+        "装备制造",
+        "食品",
+        "医药"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "哈尔滨GEO优化_哈尔滨企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司哈尔滨GEO信息优化服务，专注哈尔滨企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,哈尔滨GEO优化,哈尔滨AI获客,哈尔滨企业AI搜索优化,哈尔滨GEO信息优化公司",
+      "h1": "哈尔滨GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "beijing": {
+      "name": "北京",
+      "fullName": "北京市",
+      "pinyin": "beijing",
+      "level": "provincial_capital",
+      "province": "北京",
+      "region": "华北",
+      "districts": [
+        "东城区",
+        "西城区",
+        "朝阳区",
+        "海淀区",
+        "丰台区",
+        "石景山区",
+        "通州区",
+        "大兴区",
+        "昌平区"
+      ],
+      "newDistricts": [
+        "亦庄经开区",
+        "中关村",
+        "望京",
+        "国贸CBD"
+      ],
+      "landmarks": [
+        "中关村",
+        "国贸",
+        "望京SOHO",
+        "亦庄经开区",
+        "五道口"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "天津",
+        "石家庄"
+      ],
+      "industries": [
+        "互联网",
+        "金融",
+        "科技服务"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "北京GEO优化_北京企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司北京GEO信息优化服务，专注北京企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,北京GEO优化,北京AI获客,北京企业AI搜索优化,北京GEO信息优化公司",
+      "h1": "北京GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "tianjin": {
+      "name": "天津",
+      "fullName": "天津市",
+      "pinyin": "tianjin",
+      "level": "provincial_capital",
+      "province": "天津",
+      "region": "华北",
+      "districts": [
+        "和平区",
+        "河东区",
+        "河西区",
+        "南开区",
+        "河北区",
+        "红桥区",
+        "滨海新区"
+      ],
+      "landmarks": [
+        "滨海新区",
+        "天津经开区",
+        "于家堡"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "北京",
+        "石家庄"
+      ],
+      "industries": [
+        "港口物流",
+        "装备制造",
+        "新能源"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "天津GEO优化_天津企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司天津GEO信息优化服务，专注天津企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,天津GEO优化,天津AI获客,天津企业AI搜索优化,天津GEO信息优化公司",
+      "h1": "天津GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "shijiazhuang": {
+      "name": "石家庄",
+      "fullName": "石家庄市",
+      "pinyin": "shijiazhuang",
+      "level": "provincial_capital",
+      "province": "河北",
+      "region": "华北",
+      "districts": [
+        "长安区",
+        "桥西区",
+        "新华区",
+        "裕华区"
+      ],
+      "landmarks": [
+        "石家庄高新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "北京",
+        "太原",
+        "郑州"
+      ],
+      "industries": [
+        "医药",
+        "装备制造"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "石家庄GEO优化_石家庄企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司石家庄GEO信息优化服务，专注石家庄企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,石家庄GEO优化,石家庄AI获客,石家庄企业AI搜索优化,石家庄GEO信息优化公司",
+      "h1": "石家庄GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "taiyuan": {
+      "name": "太原",
+      "fullName": "太原市",
+      "pinyin": "taiyuan",
+      "level": "provincial_capital",
+      "province": "山西",
+      "region": "华北",
+      "districts": [
+        "小店区",
+        "迎泽区",
+        "杏花岭区",
+        "尖草坪区",
+        "万柏林区",
+        "晋源区"
+      ],
+      "landmarks": [
+        "太原高新区",
+        "综改示范区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "石家庄",
+        "呼和浩特"
+      ],
+      "industries": [
+        "能源",
+        "煤化工",
+        "装备制造"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "太原GEO优化_太原企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司太原GEO信息优化服务，专注太原企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,太原GEO优化,太原AI获客,太原企业AI搜索优化,太原GEO信息优化公司",
+      "h1": "太原GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "huhehaote": {
+      "name": "呼和浩特",
+      "fullName": "呼和浩特市",
+      "pinyin": "huhehaote",
+      "level": "provincial_capital",
+      "province": "内蒙古",
+      "region": "华北",
+      "districts": [
+        "新城区",
+        "回民区",
+        "玉泉区",
+        "赛罕区"
+      ],
+      "landmarks": [
+        "呼和浩特经开区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "太原",
+        "银川"
+      ],
+      "industries": [
+        "乳业",
+        "能源",
+        "农牧"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "呼和浩特GEO优化_呼和浩特企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司呼和浩特GEO信息优化服务，专注呼和浩特企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,呼和浩特GEO优化,呼和浩特AI获客,呼和浩特企业AI搜索优化,呼和浩特GEO信息优化公司",
+      "h1": "呼和浩特GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "shanghai": {
+      "name": "上海",
+      "fullName": "上海市",
+      "pinyin": "shanghai",
+      "level": "provincial_capital",
+      "province": "上海",
+      "region": "华东",
+      "districts": [
+        "黄浦区",
+        "徐汇区",
+        "长宁区",
+        "静安区",
+        "普陀区",
+        "虹口区",
+        "杨浦区",
+        "浦东新区",
+        "闵行区",
+        "宝山区"
+      ],
+      "newDistricts": [
+        "浦东新区",
+        "张江高科",
+        "临港新片区",
+        "漕河泾"
+      ],
+      "landmarks": [
+        "陆家嘴",
+        "张江",
+        "漕河泾",
+        "临港",
+        "徐家汇"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "杭州",
+        "南京",
+        "苏州"
+      ],
+      "industries": [
+        "金融",
+        "互联网",
+        "外贸",
+        "生物医药"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "上海GEO优化_上海企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司上海GEO信息优化服务，专注上海企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,上海GEO优化,上海AI获客,上海企业AI搜索优化,上海GEO信息优化公司",
+      "h1": "上海GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "nanjing": {
+      "name": "南京",
+      "fullName": "南京市",
+      "pinyin": "nanjing",
+      "level": "provincial_capital",
+      "province": "江苏",
+      "region": "华东",
+      "districts": [
+        "玄武区",
+        "秦淮区",
+        "建邺区",
+        "鼓楼区",
+        "浦口区",
+        "栖霞区",
+        "雨花台区",
+        "江宁区"
+      ],
+      "landmarks": [
+        "新街口",
+        "江北新区",
+        "江宁经开区",
+        "紫金山"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "上海",
+        "合肥",
+        "杭州"
+      ],
+      "industries": [
+        "电子信息",
+        "软件",
+        "汽车"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "南京GEO优化_南京企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司南京GEO信息优化服务，专注南京企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,南京GEO优化,南京AI获客,南京企业AI搜索优化,南京GEO信息优化公司",
+      "h1": "南京GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "hangzhou": {
+      "name": "杭州",
+      "fullName": "杭州市",
+      "pinyin": "hangzhou",
+      "level": "provincial_capital",
+      "province": "浙江",
+      "region": "华东",
+      "districts": [
+        "上城区",
+        "拱墅区",
+        "西湖区",
+        "滨江区",
+        "萧山区",
+        "余杭区",
+        "临平区",
+        "钱塘区"
+      ],
+      "newDistricts": [
+        "未来科技城",
+        "钱塘新区"
+      ],
+      "landmarks": [
+        "西湖",
+        "滨江区",
+        "未来科技城",
+        "钱塘新区",
+        "武林广场"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "上海",
+        "宁波",
+        "南京"
+      ],
+      "industries": [
+        "互联网",
+        "电商",
+        "数字经济"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "杭州GEO优化_杭州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司杭州GEO信息优化服务，专注杭州企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,杭州GEO优化,杭州AI获客,杭州企业AI搜索优化,杭州GEO信息优化公司",
+      "h1": "杭州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "hefei": {
+      "name": "合肥",
+      "fullName": "合肥市",
+      "pinyin": "hefei",
+      "level": "provincial_capital",
+      "province": "安徽",
+      "region": "华东",
+      "districts": [
+        "瑶海区",
+        "庐阳区",
+        "蜀山区",
+        "包河区"
+      ],
+      "newDistricts": [
+        "高新区",
+        "经开区",
+        "新站区"
+      ],
+      "landmarks": [
+        "高新区",
+        "经开区",
+        "政务区",
+        "滨湖新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "南京",
+        "武汉"
+      ],
+      "industries": [
+        "家电",
+        "汽车",
+        "集成电路"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "合肥GEO优化_合肥企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司合肥GEO信息优化服务，专注合肥企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,合肥GEO优化,合肥AI获客,合肥企业AI搜索优化,合肥GEO信息优化公司",
+      "h1": "合肥GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "fuzhou": {
+      "name": "福州",
+      "fullName": "福州市",
+      "pinyin": "fuzhou",
+      "level": "provincial_capital",
+      "province": "福建",
+      "region": "华东",
+      "districts": [
+        "鼓楼区",
+        "台江区",
+        "仓山区",
+        "马尾区",
+        "晋安区"
+      ],
+      "landmarks": [
+        "福州软件园",
+        "自贸区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "厦门",
+        "杭州"
+      ],
+      "industries": [
+        "纺织",
+        "电子信息",
+        "水产"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "福州GEO优化_福州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司福州GEO信息优化服务，专注福州企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,福州GEO优化,福州AI获客,福州企业AI搜索优化,福州GEO信息优化公司",
+      "h1": "福州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "nanchang": {
+      "name": "南昌",
+      "fullName": "南昌市",
+      "pinyin": "nanchang",
+      "level": "provincial_capital",
+      "province": "江西",
+      "region": "华东",
+      "districts": [
+        "东湖区",
+        "西湖区",
+        "青云谱区",
+        "青山湖区",
+        "新建区",
+        "红谷滩区"
+      ],
+      "landmarks": [
+        "红谷滩",
+        "南昌高新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "杭州",
+        "长沙"
+      ],
+      "industries": [
+        "航空",
+        "电子信息",
+        "新能源"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "南昌GEO优化_南昌企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司南昌GEO信息优化服务，专注南昌企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,南昌GEO优化,南昌AI获客,南昌企业AI搜索优化,南昌GEO信息优化公司",
+      "h1": "南昌GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "jinan": {
+      "name": "济南",
+      "fullName": "济南市",
+      "pinyin": "jinan",
+      "level": "provincial_capital",
+      "province": "山东",
+      "region": "华东",
+      "districts": [
+        "历下区",
+        "市中区",
+        "槐荫区",
+        "天桥区",
+        "历城区",
+        "长清区"
+      ],
+      "landmarks": [
+        "济南高新区",
+        "齐鲁软件园"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "青岛",
+        "郑州"
+      ],
+      "industries": [
+        "软件",
+        "装备制造",
+        "医药"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "济南GEO优化_济南企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司济南GEO信息优化服务，专注济南企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,济南GEO优化,济南AI获客,济南企业AI搜索优化,济南GEO信息优化公司",
+      "h1": "济南GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "zhengzhou": {
+      "name": "郑州",
+      "fullName": "郑州市",
+      "pinyin": "zhengzhou",
+      "level": "provincial_capital",
+      "province": "河南",
+      "region": "华中",
+      "districts": [
+        "中原区",
+        "二七区",
+        "管城区",
+        "金水区",
+        "上街区",
+        "惠济区"
+      ],
+      "newDistricts": [
+        "郑东新区",
+        "航空港区"
+      ],
+      "landmarks": [
+        "郑东新区",
+        "航空港区",
+        "高新区",
+        "经开区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "武汉",
+        "石家庄",
+        "西安"
+      ],
+      "industries": [
+        "物流",
+        "装备制造",
+        "食品"
+      ],
+      "descSuffix": "规划区域服务站点，推进场地选址与工商备案中",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "郑州GEO优化_郑州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司郑州GEO信息优化服务，专注郑州企业AI搜索信息优化，自研四级可信信息佐证体系，规划区域服务站点，推进场地选址与工商备案中。",
+      "keywords": "陕西企来客科技有限公司,郑州GEO优化,郑州AI获客,郑州企业AI搜索优化,郑州GEO信息优化公司",
+      "h1": "郑州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "wuhan": {
+      "name": "武汉",
+      "fullName": "武汉市",
+      "pinyin": "wuhan",
+      "level": "provincial_capital",
+      "province": "湖北",
+      "region": "华中",
+      "districts": [
+        "江岸区",
+        "江汉区",
+        "硚口区",
+        "汉阳区",
+        "武昌区",
+        "青山区",
+        "洪山区"
+      ],
+      "newDistricts": [
+        "东湖高新区",
+        "经开区",
+        "临空港"
+      ],
+      "landmarks": [
+        "光谷",
+        "经开区",
+        "天河机场",
+        "东湖"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "长沙",
+        "郑州",
+        "合肥"
+      ],
+      "industries": [
+        "光电子",
+        "汽车",
+        "生物医药"
+      ],
+      "descSuffix": "规划区域服务站点，推进场地选址与工商备案中",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "武汉GEO优化_武汉企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司武汉GEO信息优化服务，专注武汉企业AI搜索信息优化，自研四级可信信息佐证体系，规划区域服务站点，推进场地选址与工商备案中。",
+      "keywords": "陕西企来客科技有限公司,武汉GEO优化,武汉AI获客,武汉企业AI搜索优化,武汉GEO信息优化公司",
+      "h1": "武汉GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "changsha": {
+      "name": "长沙",
+      "fullName": "长沙市",
+      "pinyin": "changsha",
+      "level": "provincial_capital",
+      "province": "湖南",
+      "region": "华中",
+      "districts": [
+        "芙蓉区",
+        "天心区",
+        "岳麓区",
+        "开福区",
+        "雨花区",
+        "望城区"
+      ],
+      "newDistricts": [
+        "湘江新区"
+      ],
+      "landmarks": [
+        "湘江新区",
+        "高新区",
+        "岳麓山"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "武汉",
+        "广州",
+        "贵阳"
+      ],
+      "industries": [
+        "工程机械",
+        "文化创意",
+        "新消费"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "长沙GEO优化_长沙企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司长沙GEO信息优化服务，专注长沙企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,长沙GEO优化,长沙AI获客,长沙企业AI搜索优化,长沙GEO信息优化公司",
+      "h1": "长沙GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "guangzhou": {
+      "name": "广州",
+      "fullName": "广州市",
+      "pinyin": "guangzhou",
+      "level": "provincial_capital",
+      "province": "广东",
+      "region": "华南",
+      "districts": [
+        "越秀区",
+        "海珠区",
+        "荔湾区",
+        "天河区",
+        "白云区",
+        "黄埔区",
+        "番禺区",
+        "花都区",
+        "南沙区"
+      ],
+      "newDistricts": [
+        "南沙自贸区",
+        "黄埔经开区",
+        "天河软件园"
+      ],
+      "landmarks": [
+        "珠江新城",
+        "天河软件园",
+        "黄埔经开区",
+        "南沙",
+        "琶洲"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "深圳",
+        "佛山",
+        "长沙"
+      ],
+      "industries": [
+        "商贸",
+        "汽车",
+        "电子信息"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "广州GEO优化_广州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司广州GEO信息优化服务，专注广州企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,广州GEO优化,广州AI获客,广州企业AI搜索优化,广州GEO信息优化公司",
+      "h1": "广州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "shenzhen": {
+      "name": "深圳",
+      "fullName": "深圳市",
+      "pinyin": "shenzhen",
+      "level": "prefecture",
+      "province": "广东",
+      "region": "华南",
+      "districts": [
+        "福田区",
+        "罗湖区",
+        "南山区",
+        "盐田区",
+        "宝安区",
+        "龙岗区",
+        "龙华区",
+        "坪山区",
+        "光明区"
+      ],
+      "newDistricts": [
+        "前海",
+        "南山科技园",
+        "河套"
+      ],
+      "landmarks": [
+        "南山科技园",
+        "前海",
+        "华强北",
+        "福田CBD",
+        "河套"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "广州",
+        "东莞"
+      ],
+      "industries": [
+        "互联网",
+        "金融",
+        "电子信息",
+        "人工智能"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "深圳GEO优化_深圳企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司深圳GEO信息优化服务，专注深圳企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,深圳GEO优化,深圳AI获客,深圳企业AI搜索优化,深圳GEO信息优化公司",
+      "h1": "深圳GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "haikou": {
+      "name": "海口",
+      "fullName": "海口市",
+      "pinyin": "haikou",
+      "level": "provincial_capital",
+      "province": "海南",
+      "region": "华南",
+      "districts": [
+        "秀英区",
+        "龙华区",
+        "琼山区",
+        "美兰区"
+      ],
+      "newDistricts": [
+        "江东新区"
+      ],
+      "landmarks": [
+        "江东新区",
+        "自贸港"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "广州",
+        "南宁"
+      ],
+      "industries": [
+        "旅游",
+        "自贸港",
+        "现代服务"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "海口GEO优化_海口企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司海口GEO信息优化服务，专注海口企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,海口GEO优化,海口AI获客,海口企业AI搜索优化,海口GEO信息优化公司",
+      "h1": "海口GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "guiyang": {
+      "name": "贵阳",
+      "fullName": "贵阳市",
+      "pinyin": "guiyang",
+      "level": "provincial_capital",
+      "province": "贵州",
+      "region": "西南",
+      "districts": [
+        "南明区",
+        "云岩区",
+        "花溪区",
+        "乌当区",
+        "白云区",
+        "观山湖区"
+      ],
+      "landmarks": [
+        "贵安新区",
+        "大数据产业园"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "成都",
+        "重庆",
+        "昆明"
+      ],
+      "industries": [
+        "大数据",
+        "旅游",
+        "磷化工"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "贵阳GEO优化_贵阳企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司贵阳GEO信息优化服务，专注贵阳企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,贵阳GEO优化,贵阳AI获客,贵阳企业AI搜索优化,贵阳GEO信息优化公司",
+      "h1": "贵阳GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "kunming": {
+      "name": "昆明",
+      "fullName": "昆明市",
+      "pinyin": "kunming",
+      "level": "provincial_capital",
+      "province": "云南",
+      "region": "西南",
+      "districts": [
+        "五华区",
+        "盘龙区",
+        "官渡区",
+        "西山区",
+        "呈贡区"
+      ],
+      "landmarks": [
+        "呈贡新区",
+        "滇池",
+        "经开区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "贵阳",
+        "成都"
+      ],
+      "industries": [
+        "旅游",
+        "花卉",
+        "有色金属"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "昆明GEO优化_昆明企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司昆明GEO信息优化服务，专注昆明企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,昆明GEO优化,昆明AI获客,昆明企业AI搜索优化,昆明GEO信息优化公司",
+      "h1": "昆明GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "nanning": {
+      "name": "南宁",
+      "fullName": "南宁市",
+      "pinyin": "nanning",
+      "level": "provincial_capital",
+      "province": "广西",
+      "region": "西南",
+      "districts": [
+        "兴宁区",
+        "青秀区",
+        "江南区",
+        "西乡塘区",
+        "良庆区",
+        "邕宁区"
+      ],
+      "newDistricts": [
+        "五象新区"
+      ],
+      "landmarks": [
+        "五象新区",
+        "高新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "广州",
+        "贵阳"
+      ],
+      "industries": [
+        "农业",
+        "商贸",
+        "东盟贸易"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "南宁GEO优化_南宁企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司南宁GEO信息优化服务，专注南宁企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,南宁GEO优化,南宁AI获客,南宁企业AI搜索优化,南宁GEO信息优化公司",
+      "h1": "南宁GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "lasa": {
+      "name": "拉萨",
+      "fullName": "拉萨市",
+      "pinyin": "lasa",
+      "level": "provincial_capital",
+      "province": "西藏",
+      "region": "西南",
+      "districts": [
+        "城关区",
+        "堆龙德庆区"
+      ],
+      "landmarks": [
+        "布达拉宫",
+        "拉萨经开区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "西宁",
+        "成都"
+      ],
+      "industries": [
+        "旅游",
+        "藏医药"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "拉萨GEO优化_拉萨企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司拉萨GEO信息优化服务，专注拉萨企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,拉萨GEO优化,拉萨AI获客,拉萨企业AI搜索优化,拉萨GEO信息优化公司",
+      "h1": "拉萨GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "suzhou": {
+      "name": "苏州",
+      "fullName": "苏州市",
+      "pinyin": "suzhou",
+      "level": "prefecture",
+      "province": "江苏",
+      "region": "华东",
+      "districts": [
+        "姑苏区",
+        "虎丘区",
+        "吴中区",
+        "相城区",
+        "吴江区"
+      ],
+      "newDistricts": [
+        "苏州工业园区",
+        "高新区"
+      ],
+      "landmarks": [
+        "苏州工业园区",
+        "高新区",
+        "昆山"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "上海",
+        "南京",
+        "无锡"
+      ],
+      "industries": [
+        "电子信息",
+        "装备制造",
+        "纺织"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "苏州GEO优化_苏州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司苏州GEO信息优化服务，专注苏州企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,苏州GEO优化,苏州AI获客,苏州企业AI搜索优化,苏州GEO信息优化公司",
+      "h1": "苏州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "ningbo": {
+      "name": "宁波",
+      "fullName": "宁波市",
+      "pinyin": "ningbo",
+      "level": "prefecture",
+      "province": "浙江",
+      "region": "华东",
+      "districts": [
+        "海曙区",
+        "江北区",
+        "北仑区",
+        "镇海区",
+        "鄞州区",
+        "奉化区"
+      ],
+      "landmarks": [
+        "宁波经开区",
+        "北仑港",
+        "杭州湾新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "杭州",
+        "上海"
+      ],
+      "industries": [
+        "港口物流",
+        "石化",
+        "汽车零部件"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "宁波GEO优化_宁波企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司宁波GEO信息优化服务，专注宁波企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,宁波GEO优化,宁波AI获客,宁波企业AI搜索优化,宁波GEO信息优化公司",
+      "h1": "宁波GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "wuxi": {
+      "name": "无锡",
+      "fullName": "无锡市",
+      "pinyin": "wuxi",
+      "level": "prefecture",
+      "province": "江苏",
+      "region": "华东",
+      "districts": [
+        "锡山区",
+        "惠山区",
+        "滨湖区",
+        "梁溪区",
+        "新吴区"
+      ],
+      "landmarks": [
+        "无锡经开区",
+        "物联网产业园"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "苏州",
+        "南京",
+        "常州"
+      ],
+      "industries": [
+        "物联网",
+        "集成电路",
+        "纺织"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "无锡GEO优化_无锡企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司无锡GEO信息优化服务，专注无锡企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,无锡GEO优化,无锡AI获客,无锡企业AI搜索优化,无锡GEO信息优化公司",
+      "h1": "无锡GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "foshan": {
+      "name": "佛山",
+      "fullName": "佛山市",
+      "pinyin": "foshan",
+      "level": "prefecture",
+      "province": "广东",
+      "region": "华南",
+      "districts": [
+        "禅城区",
+        "南海区",
+        "顺德区",
+        "三水区",
+        "高明区"
+      ],
+      "landmarks": [
+        "顺德家电产业园",
+        "南海高新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "广州",
+        "深圳"
+      ],
+      "industries": [
+        "家电",
+        "陶瓷",
+        "装备制造"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "佛山GEO优化_佛山企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司佛山GEO信息优化服务，专注佛山企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,佛山GEO优化,佛山AI获客,佛山企业AI搜索优化,佛山GEO信息优化公司",
+      "h1": "佛山GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "dongguan": {
+      "name": "东莞",
+      "fullName": "东莞市",
+      "pinyin": "dongguan",
+      "level": "prefecture",
+      "province": "广东",
+      "region": "华南",
+      "districts": [
+        "莞城街道",
+        "南城街道",
+        "东城街道",
+        "万江街道"
+      ],
+      "newDistricts": [
+        "松山湖",
+        "滨海湾新区"
+      ],
+      "landmarks": [
+        "松山湖",
+        "滨海湾新区",
+        "长安"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "深圳",
+        "广州"
+      ],
+      "industries": [
+        "电子信息",
+        "装备制造",
+        "新材料"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "东莞GEO优化_东莞企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司东莞GEO信息优化服务，专注东莞企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,东莞GEO优化,东莞AI获客,东莞企业AI搜索优化,东莞GEO信息优化公司",
+      "h1": "东莞GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "qingdao": {
+      "name": "青岛",
+      "fullName": "青岛市",
+      "pinyin": "qingdao",
+      "level": "prefecture",
+      "province": "山东",
+      "region": "华东",
+      "districts": [
+        "市南区",
+        "市北区",
+        "黄岛区",
+        "崂山区",
+        "李沧区",
+        "城阳区"
+      ],
+      "newDistricts": [
+        "西海岸新区",
+        "上合示范区"
+      ],
+      "landmarks": [
+        "西海岸新区",
+        "崂山科技园",
+        "上合示范区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "济南",
+        "烟台"
+      ],
+      "industries": [
+        "家电",
+        "港口物流",
+        "海洋经济"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "青岛GEO优化_青岛企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司青岛GEO信息优化服务，专注青岛企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,青岛GEO优化,青岛AI获客,青岛企业AI搜索优化,青岛GEO信息优化公司",
+      "h1": "青岛GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "quanzhou": {
+      "name": "泉州",
+      "fullName": "泉州市",
+      "pinyin": "quanzhou",
+      "level": "prefecture",
+      "province": "福建",
+      "region": "华东",
+      "districts": [
+        "鲤城区",
+        "丰泽区",
+        "洛江区",
+        "泉港区"
+      ],
+      "landmarks": [
+        "泉州经开区",
+        "晋江"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "福州",
+        "厦门"
+      ],
+      "industries": [
+        "纺织鞋服",
+        "石材",
+        "外贸"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "泉州GEO优化_泉州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司泉州GEO信息优化服务，专注泉州企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,泉州GEO优化,泉州AI获客,泉州企业AI搜索优化,泉州GEO信息优化公司",
+      "h1": "泉州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "nantong": {
+      "name": "南通",
+      "fullName": "南通市",
+      "pinyin": "nantong",
+      "level": "prefecture",
+      "province": "江苏",
+      "region": "华东",
+      "districts": [
+        "崇川区",
+        "通州区",
+        "海门区"
+      ],
+      "newDistricts": [
+        "南通创新区"
+      ],
+      "landmarks": [
+        "南通经开区",
+        "创新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "上海",
+        "苏州"
+      ],
+      "industries": [
+        "船舶",
+        "纺织",
+        "电子信息"
+      ],
+      "descSuffix": "线上对接服务",
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "南通GEO优化_南通企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司南通GEO信息优化服务，专注南通企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,南通GEO优化,南通AI获客,南通企业AI搜索优化,南通GEO信息优化公司",
+      "h1": "南通GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "yantai": {
+      "name": "烟台",
+      "fullName": "烟台市",
+      "pinyin": "yantai",
+      "level": "prefecture",
+      "province": "山东",
+      "region": "华东",
+      "districts": [
+        "芝罘区",
+        "福山区",
+        "牟平区",
+        "莱山区"
+      ],
+      "landmarks": [
+        "烟台经开区",
+        "高新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "青岛",
+        "济南"
+      ],
+      "industries": [
+        "葡萄酒",
+        "港口",
+        "装备制造"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "烟台GEO优化_烟台企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司烟台GEO信息优化服务，专注烟台企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,烟台GEO优化,烟台AI获客,烟台企业AI搜索优化,烟台GEO信息优化公司",
+      "h1": "烟台GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "tangshan": {
+      "name": "唐山",
+      "fullName": "唐山市",
+      "pinyin": "tangshan",
+      "level": "prefecture",
+      "province": "河北",
+      "region": "华北",
+      "districts": [
+        "路南区",
+        "路北区",
+        "古冶区",
+        "开平区",
+        "丰南区"
+      ],
+      "landmarks": [
+        "曹妃甸",
+        "唐山经开区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "北京",
+        "天津"
+      ],
+      "industries": [
+        "钢铁",
+        "建材",
+        "化工"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "唐山GEO优化_唐山企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司唐山GEO信息优化服务，专注唐山企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,唐山GEO优化,唐山AI获客,唐山企业AI搜索优化,唐山GEO信息优化公司",
+      "h1": "唐山GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "wenzhou": {
+      "name": "温州",
+      "fullName": "温州市",
+      "pinyin": "wenzhou",
+      "level": "prefecture",
+      "province": "浙江",
+      "region": "华东",
+      "districts": [
+        "鹿城区",
+        "龙湾区",
+        "瓯海区",
+        "洞头区"
+      ],
+      "landmarks": [
+        "温州经开区",
+        "乐清电气城"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "杭州",
+        "宁波"
+      ],
+      "industries": [
+        "电气",
+        "鞋服",
+        "商贸"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "温州GEO优化_温州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司温州GEO信息优化服务，专注温州企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,温州GEO优化,温州AI获客,温州企业AI搜索优化,温州GEO信息优化公司",
+      "h1": "温州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "xuzhou": {
+      "name": "徐州",
+      "fullName": "徐州市",
+      "pinyin": "xuzhou",
+      "level": "prefecture",
+      "province": "江苏",
+      "region": "华东",
+      "districts": [
+        "鼓楼区",
+        "云龙区",
+        "贾汪区",
+        "泉山区",
+        "铜山区"
+      ],
+      "landmarks": [
+        "徐州经开区",
+        "高新区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "南京",
+        "济南"
+      ],
+      "industries": [
+        "工程机械",
+        "煤炭",
+        "物流"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "徐州GEO优化_徐州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司徐州GEO信息优化服务，专注徐州企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,徐州GEO优化,徐州AI获客,徐州企业AI搜索优化,徐州GEO信息优化公司",
+      "h1": "徐州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    },
+    "changzhou": {
+      "name": "常州",
+      "fullName": "常州市",
+      "pinyin": "changzhou",
+      "level": "prefecture",
+      "province": "江苏",
+      "region": "华东",
+      "districts": [
+        "天宁区",
+        "钟楼区",
+        "新北区",
+        "武进区"
+      ],
+      "landmarks": [
+        "常州经开区",
+        "新北区"
+      ],
+      "serviceType": "online",
+      "nearbyCities": [
+        "无锡",
+        "南京"
+      ],
+      "industries": [
+        "新能源",
+        "装备制造"
+      ],
+      "descSuffix": "线上对接服务",
+      "newDistricts": [],
+      "counties": [],
+      "parentCity": null,
+      "hasOnsite": false,
+      "title": "常州GEO优化_常州企业AI获客服务_陕西企来客科技有限公司",
+      "desc": "陕西企来客科技有限公司常州GEO信息优化服务，专注常州企业AI搜索信息优化，自研四级可信信息佐证体系，线上对接服务。",
+      "keywords": "陕西企来客科技有限公司,常州GEO优化,常州AI获客,常州企业AI搜索优化,常州GEO信息优化公司",
+      "h1": "常州GEO优化_企业AI精准获客_陕西企来客科技有限公司"
+    }
+  }
+}
