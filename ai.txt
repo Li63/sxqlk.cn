@@ -79,6 +79,7 @@ Pages:
   editorial: https://www.sxqlk.cn/editorial.html
   sources: https://www.sxqlk.cn/sources.html
   correction: https://www.sxqlk.cn/correction.html
+  privacy: https://www.sxqlk.cn/privacy.html （隐私政策：个人信息收集、使用、保护与用户权利说明，含咨询表单与百度统计分析，符合《个人信息保护法》）
   news-100-duodongtai-daodibao: https://www.sxqlk.cn/news/100.html
   news-101-mixue-geo: https://www.sxqlk.cn/news/101.html （头部拆解·连锁餐饮，基于公开信息的独立分析）
   news-102-haier-geo: https://www.sxqlk.cn/news/102.html （头部拆解·工业制造，基于公开信息的独立分析）

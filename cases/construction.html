@@ -227,7 +227,29 @@ s.parentNode.insertBefore(el, s);
     </section>
   </main>
   </article>
-<footer class="footer" role="contentinfo">
+    <section class="section section--alt" id="inlineLead">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-head__eyebrow">预约咨询</span>
+          <h2 class="sec-head__title">留下信息，获取专属 GEO 诊断</h2>
+          <p class="sec-head__sub">由对应行业专项小组对接，24 小时内与您联系</p>
+        </div>
+        <div class="contact-form-panel">
+          <form class="contact-form lead-form" method="post" action="https://www.sxqlk.cn/webhook-proxy.php" aria-label="咨询表单" novalidate>
+            <div class="form-grid">
+              <div class="form-group"><label>称呼 <span class="req">*</span></label><input type="text" name="name" placeholder="请输入您的称呼" required autocomplete="name"></div>
+              <div class="form-group"><label>联系电话 <span class="req">*</span></label><input type="tel" name="phone" placeholder="请输入联系电话" required autocomplete="tel"></div>
+              <div class="form-group"><label>所属行业</label><select name="industry"><option value="">请选择行业（选填）</option><option>制造业</option><option>教育培训</option><option>医疗健康</option><option>建筑工程</option><option>餐饮零售</option><option>软件IT</option><option>其他</option></select></div>
+              <div class="form-group full-width"><label>详细需求</label><textarea name="message" rows="4" placeholder="请描述您的具体需求（选填）"></textarea></div>
+            </div>
+            <label class="lead-form__consent"><input type="checkbox" name="consent" value="yes" required><span>我同意将以上信息用于本次咨询沟通</span></label>
+            <button type="submit" class="btn btn-primary btn-lg">提交咨询</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand"><h3>陕西企来客科技有限公司</h3><p>深耕西北企业GEO优化与AI获客服务，自研算法驱动，覆盖西安及周边城市，助力企业实现精准获客与高转化。</p><p>服务热线：<a href="tel:4008052163" style="color:#fff;font-weight:600;">400-805-2163</a></p></div>

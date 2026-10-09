@@ -622,3 +622,89 @@
     })(forms[i]);
   }
 })();
+
+// ===== 全站悬浮咨询条 + 隐私链接（QLK） =====
+(function(){
+  'use strict';
+  if (document.getElementById('qlkFloatbar')) return;
+  if (document.querySelector('.float-cta')) return; // 自带咨询条的页面不重复注入
+
+  var PHONE = '400-805-2163';
+  var PHONE_HREF = 'tel:4008052163';
+  var WEBHOOK = 'https://www.sxqlk.cn/webhook-proxy.php';
+  var PRIVACY = '/privacy.html';
+
+  var bar = document.createElement('div');
+  bar.id = 'qlkFloatbar';
+  bar.className = 'qlk-floatbar';
+  bar.innerHTML = '<a class="qlk-floatbar__tel" href="' + PHONE_HREF + '" aria-label="拨打咨询电话 ' + PHONE + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>' + PHONE + '</span></a>' +
+    '<button class="qlk-floatbar__cta" type="button" id="qlkFloatCta">免费诊断</button>';
+  document.body.appendChild(bar);
+
+  var modal = document.createElement('div');
+  modal.id = 'qlkModal';
+  modal.className = 'qlk-modal';
+  modal.setAttribute('aria-hidden', 'true');
+  modal.innerHTML = '<div class="qlk-modal__mask" id="qlkModalMask"></div>' +
+    '<div class="qlk-modal__panel" role="dialog" aria-modal="true" aria-label="咨询表单">' +
+      '<button class="qlk-modal__close" type="button" id="qlkModalClose" aria-label="关闭">×</button>' +
+      '<h3 class="qlk-modal__title">免费 GEO 诊断名额</h3>' +
+      '<p class="qlk-modal__desc">留下信息，对应行业专项小组 24 小时内与您联系</p>' +
+      '<form class="qlk-modal__form" id="qlkLeadForm">' +
+        '<input type="text" name="name" class="qlk-input" placeholder="您的称呼 *" required autocomplete="name">' +
+        '<input type="tel" name="phone" class="qlk-input" placeholder="联系电话 *" required autocomplete="tel">' +
+        '<select name="industry" class="qlk-input"><option value="">请选择行业（选填）</option><option>制造业</option><option>教育培训</option><option>医疗健康</option><option>建筑工程</option><option>餐饮零售</option><option>软件IT</option><option>其他</option></select>' +
+        '<textarea name="message" class="qlk-input" rows="3" placeholder="需求描述（选填）"></textarea>' +
+        '<label class="qlk-modal__consent"><input type="checkbox" name="consent" value="yes" required><span>我同意将以上信息用于本次咨询沟通</span></label>' +
+        '<button type="submit" class="qlk-btn">提交咨询</button>' +
+        '<p class="qlk-modal__privacy">信息仅用于方案沟通，详见 <a href="' + PRIVACY + '" target="_blank" rel="noopener">隐私政策</a></p>' +
+      '</form>' +
+    '</div>';
+  document.body.appendChild(modal);
+
+  var cta = document.getElementById('qlkFloatCta');
+  var closeBtn = document.getElementById('qlkModalClose');
+  var mask = document.getElementById('qlkModalMask');
+
+  function openModal(){ modal.classList.add('qlk-modal--open'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+  function closeModal(){ modal.classList.remove('qlk-modal--open'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+
+  cta.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  mask.addEventListener('click', closeModal);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  var PHONE_RE = /^(1[3-9]\d{9}|0\d{2,3}-?\d{7,8}|400-?\d{3}-?\d{4})$/;
+  function fv(f,n){ var el=f.querySelector('[name="' + n + '"]'); if(!el) return ''; if(el.type==='checkbox') return el.checked?el.value:''; return el.value?String(el.value).trim():''; }
+
+  document.getElementById('qlkLeadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = this;
+    var name = fv(f,'name'), phone = fv(f,'phone'), industry = fv(f,'industry')||'未选择', message = fv(f,'message')||'未填写', consent = fv(f,'consent');
+    if(!name){ alert('请填写您的称呼'); return; }
+    if(!phone){ alert('请填写联系电话'); return; }
+    if(!PHONE_RE.test(phone)){ alert('请输入有效的联系电话'); return; }
+    if(!consent){ alert('请先同意隐私说明'); return; }
+    var btn = f.querySelector('[type="submit"]'); var bt = btn?btn.textContent:''; if(btn){ btn.disabled=true; btn.textContent='提交中...'; }
+    var d = new Date(); function p(n){ return (n<10?'0':'')+n; }
+    var stamp = d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+' '+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds());
+    var content = '【企来客官网 - 悬浮条咨询】\n客户姓名：'+name+'\n联系电话：'+phone+'\n所属行业：'+industry+'\n详细需求：'+message+'\n提交时间：'+stamp+'\n来源页面：'+document.title;
+    fetch(WEBHOOK, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({msgtype:'text', text:{content:content}})})
+      .then(function(r){ return r.json().then(function(data){ return {ok:r.ok, data:data}; }); })
+      .then(function(res){ if(res.ok && res.data && res.data.errcode===0){ alert('提交成功，我们将尽快与您联系'); f.reset(); closeModal(); } else { alert('提交失败，请直接拨打 '+PHONE); } })
+      .catch(function(){ alert('网络异常，请直接拨打 '+PHONE); })
+      .then(function(){ if(btn){ btn.disabled=false; btn.textContent=bt||'提交咨询'; } });
+  });
+
+  // 全站 footer-bottom 注入隐私政策链接（无需改 689 个 HTML）
+  var fb = document.querySelector('.footer-bottom');
+  if(fb){
+    var p = fb.querySelector('p');
+    if(p && !p.querySelector('a[href*="privacy"]')){
+      var a = document.createElement('a');
+      a.href = PRIVACY; a.textContent='隐私政策'; a.rel='noopener';
+      p.appendChild(document.createTextNode(' | '));
+      p.appendChild(a);
+    }
+  }
+})();
