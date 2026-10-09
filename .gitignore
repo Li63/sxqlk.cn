@@ -1,10 +1,12 @@
-# 大体积未引用资源（部署排除项）
+# ===== 本站专属排除（企来客官网 www.sxqlk.cn）=====
+# 大体积未引用资源（全站零引用，部署排除项）
 assets/
 
 # WorkBuddy 工作数据与本地记忆
 .workbuddy/
 
-# 日志与临时脚本
+# 服务器运行时缓存与临时脚本
+.webhook_cache/
 _httpd*.log
 _httpd*.log.*
 *.py
@@ -17,11 +19,89 @@ _httpd*.log.*
 *_1.md
 *_1.txt
 *_1.coze
-*_1.gitignore
+_*_1.gitignore
 
-# 旧分站备份
+# 旧分站备份（含已废止口径，不作事实来源）
 subsites.bak/
 
-# 系统文件
+# ===== 通用开发排除（另一台电脑同步过来的模板规则）=====
+node_modules
+dist
+.DS_Store
+*.swp
+.git/*
+__pycache__/
+*.pyc
+.venv/*
+*.o
+*.a
+/vendor
+*.egg-info/
+/.env
+.env
+
+# JS/TS bundlers & build outputs
+.next
+.nuxt
+.turbo
+.vercel
+.parcel-cache
+.cache
+coverage
+storybook-static
+
+# Package manager artifacts
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+.pnp*
+.npm
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.iml
+
+# OS / misc
 Thumbs.db
+ehthumbs.db
 Desktop.ini
+
+# Logs
+output.log
+*.log
+*.log.*
+logs/
+
+# 视频文件
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
+*.webm
+*.m4v
+*.mpeg
+*.mpg
+*.3gp
+*.f4v
+*.rmvb
+*.vob
+
+# 归档文件
+*.iso
+*.dmg
+*.rar
+*.gz
+
+# 预览与产物
+.preview
+.codegraph
+.cozeproj/reduction
